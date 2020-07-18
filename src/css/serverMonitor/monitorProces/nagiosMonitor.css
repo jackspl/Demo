@@ -1,0 +1,621 @@
+.nagiosMonitor, html{
+    width: 100%;
+    height: 100%;
+    /* background-color: tomato; */
+    /* min-width: 1080px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+    /* background: red; */
+}
+/* 头部总框 */
+.nagiosMonitor .header {
+  background-color: #2f3b52;
+  color: #333;
+  text-align: center;
+  height: 60px !important;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+/* logo部分 */
+.nagiosMonitor .header {
+  top: 0px
+}
+.nagiosMonitor .header .logo {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 24px;
+  background-color: #2f3b52;
+}
+.nagiosMonitor .header .logo .img {
+  margin: 10px;
+}
+/* 切换隐藏显示按钮 */
+.nagiosMonitor .header .switch {
+  height: 60px;
+  padding-top: 10px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 30px;
+  background-color: #2f3b52;
+}
+/* 字体图标大小 */
+.nagiosMonitor .header .switch .size{
+  font-size: 14px;
+  color: #ccc;;
+}
+/* 顶部搜索框 */
+.nagiosMonitor .header .seachBox {
+  height: 60px;
+  line-height: 60px;
+  margin-left: 40px;
+  margin-right: 5px;
+  float: left;
+  box-sizing: border-box;
+  flex: 1;
+}
+.nagiosMonitor .seachBox ul li {
+  margin: 0 20px;
+  height: 60px;
+  float: left;
+  color: white;
+  font-size: 16px;
+}
+.nagiosMonitor .seachBox ul li:hover  {
+  color: #ccc;
+}
+/* -------------------------------------- */
+.nagiosMonitor .na_main {
+  height: 100% !important;
+} 
+.nagiosMonitor .hhh {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+/* 侧边栏显示详细信息 */
+.nagiosMonitor .infoFr {
+  width: 54px;
+  height: 60px;
+}
+.nagiosMonitor .infoFr .frIcon {
+  font-size: 18px;
+  color: white;
+}
+.nagiosMonitor .black {
+  background-color: black;
+}
+.nagiosMonitor .black2 {
+  background-color: rgb(50, 50, 50);
+}
+/* -------------------------------------- */
+/* 隐藏的详细信息 */
+.nagiosMonitor .menu {
+  width: 54px;
+  height: 180px;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+}
+.nagiosMonitor .menu ul li {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+/* 时钟按钮 */
+.nagiosMonitor .menu .schedule {
+  color: white;
+  font-size: 23px;
+}
+/* 时钟信息 */
+.nagiosMonitor .menu .okInfo {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .menu ul li .okInfo .span {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  right: 100px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .menu .okInfo .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  left: -115px;
+  color: black;
+}
+/* ---------------------------------------- */
+/* 分享信息 */
+.nagiosMonitor .menu .pout {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .menu ul li .pout .span {
+  display: block;
+  position: absolute;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  right: 100px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .menu .pout .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  left: -115px;
+  color: black;
+}
+/* ---------------------------------------- */
+/* 添加信息 */
+.nagiosMonitor .menu .add {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .menu ul li .add .span {
+  display: block;
+  position: absolute;
+  width: 110px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  right: 100px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .menu .add .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  left: -115px;
+  color: black;
+  
+}
+/* ---------------------------------------- */
+/* 回形针信息 */
+.nagiosMonitor .menu .perma {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .menu ul li .perma .span {
+  display: block;
+  position: absolute;
+  width: 94px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  right: 100px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .menu .perma .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  left: -115px;
+  color: black;
+}
+/* ---------------------------------------- */
+/* 信息信息 */
+.nagiosMonitor .menu .feed {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .menu ul li .feed .span {
+  display: block;
+  position: absolute;
+  width: 60px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  right: 100px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .menu .feed .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 5px;
+  left: -115px;
+  color: black;
+}
+/* -------------------------------------- */
+/* 退出 */
+.nagiosMonitor .out {
+  height: 60px;
+  color: white;
+  font-size: 14px;
+  margin-right: 15px;
+  /* background-color: red; */
+}
+.nagiosMonitor .out .outIcon {
+  font-size: 14px;
+  margin-right: 3px;
+}
+/* -------------------------------------- */
+/* 用户名 */
+.nagiosMonitor .userName {
+  height: 60px;
+  color: white;
+  font-size: 14px;
+  margin-right: 30px;
+  /* background-color: red; */
+}
+.nagiosMonitor .userName .userIcon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+/* -------------------------------------- */
+/* ok */
+.nagiosMonitor .ok {
+  width: 54px;
+  height: 60px;
+  color: white;
+  font-size: 14px;
+  /* background-color: red; */
+}
+.nagiosMonitor .ok .okIcon {
+  font-size: 20px;
+  margin-right: 3px;
+  color: #7ac77a;
+}
+
+/* -------------------------------------- */
+/* ok信息 */
+.nagiosMonitor .okInfo {
+  margin-right: -35px;
+  position: relative;
+}
+.nagiosMonitor .okInfo .span {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+  top:20px;
+  right: 35px;
+  line-height: 20px;
+  background-color: black;
+}
+.nagiosMonitor .okInfo .hiddenOK {
+  position: relative;
+  position: absolute;
+  font-size: 30px;
+  top: 16px;
+  left: -50px;
+  color: black;
+}
+/* -------------------------------------- */
+/* 搜索图标 */
+.nagiosMonitor .seachButton {
+  width: 54px;
+  height: 60px;
+  color: white;
+  font-size: 14px;
+}
+.nagiosMonitor .seachButton .seachIcon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+/* -------------------------------------- */
+/* 搜索框 */
+.nagiosMonitor .seachInput {
+  margin-right: -35px;
+
+}
+.nagiosMonitor .seachInput .el-input__inner {
+  border-radius: 0px;
+  height: 30px;
+  line-height: 30px;
+}
+.nagiosMonitor .seachInput .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+/* ------------------------------------------------- */
+.nagiosMonitor .mainSum {
+  width: 100%;
+  border: 1px solid red;
+  background-color: aqua;
+}
+/* 左侧导航栏 */
+.nagiosMonitor .aside {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(47, 59, 82);
+  color: #333;
+  text-align: center;
+  float: left;
+  
+}
+.nagiosMonitor .aside .el-submenu__title:hover{
+  background-color: #4b576a !important;
+}
+.nagiosMonitor .aside .el-menu-item:hover{
+  background-color: #4b576a !important;
+}
+/* 处理右边框是1px的边框小bug */
+.nagiosMonitor .aside .el-menu {
+  border:none;
+  background-color: rgb(47, 59, 82);
+}
+/* 一级标题样式 */
+.nagiosMonitor .aside .el-submenu__title {
+  text-align: left;
+}
+/* 二级标题样式 */
+.nagiosMonitor .aside .el-submenu .el-menu-item {
+  text-align: left;
+  padding-left: 30px !important;
+}
+/* ------------------------------------------------- */
+.nagiosMonitor .el-main {
+  padding: 10px 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #1d4b7f;
+  color: white;
+}
+/* 右侧主体内容 */
+.nagiosMonitor .main {
+  background-color: rgb(47, 59, 82);
+  color: #333;
+  width: 70%;
+  height: 100%;
+  padding: 0;
+  float: left;
+  
+}
+/* 小图标 */
+.nagiosMonitor.plusImg {
+  position: relative;
+    left: 200px;
+    top: 59px;
+}
+/* ------------------------------------------- */
+/* 主体开始 */
+/* 头部 */
+.nagiosMonitor .na_top {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 50px;
+}
+/* 左边 */
+.nagiosMonitor .top_fl {
+  height: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.nagiosMonitor .top_fl h1{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+/* 字体图标 */
+.nagiosMonitor .top_fr .host_icon {
+  color: #4D89F9;
+  font-size: 14px;
+}
+/* 标题 */
+.nagiosMonitor .top_fr .host_title {
+  font-size: 20px;
+  /* font-weight: bold; */
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+/* 表格 */
+.nagiosMonitor .top_fr .host_table_box {
+  padding-left: 20px;
+}
+.nagiosMonitor .top_fr .host_table {
+  /* border: 1px solid #D3D3D3; */
+  border-collapse: collapse;
+  text-align: left;
+  margin: 5px;
+}
+.nagiosMonitor .top_fr .host_table a {
+  color: #4D89F9;
+  font-size: 16px;
+}
+.nagiosMonitor .top_fr .host_table .tdGreen {
+  background-color: #B2FF5F;
+  display: block;
+  margin: 5px;
+}
+.nagiosMonitor .top_fr .host_table .tdRed {
+  background-color: #FF795F;
+  display: block;
+  margin: 5px;
+}
+.nagiosMonitor .top_fr .host_table .tdYellow {
+  background-color: #FFC85F;
+  display: block;
+  margin: 5px;
+}
+.nagiosMonitor .top_fr .host_table .tdCream {
+  background-color: #FFE4AF;
+  display: block;
+  margin: 5px;
+}
+.nagiosMonitor .table-bordered,thead,tr,th,td {
+  /* border: 1px solid #D3D3D3; */
+}
+.nagiosMonitor .top_fr .host_table th {
+  font-size: 24px;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-family: monospace;
+  border: 1px solid #75777b;
+}
+.nagiosMonitor .top_fr .host_table td {
+  text-align: center;
+  color: black;
+  border: 1px solid #75777b;
+}
+/* 底部时间 */
+.nagiosMonitor .top_fr .host_time {
+  padding-left: 25px;
+  font-size: 15px;
+  color: white;
+}
+/* -------------------------------------------------- */
+/* 右侧中间分页 */
+.nagiosMonitor .na_middle {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.nagiosMonitor .showInfo {
+  font-size: 14px;
+  color: white;
+}
+.nagiosMonitor .page {
+  text-align: center;
+  margin: 0 auto;
+}
+.nagiosMonitor .el-pagination {
+  position: relative;
+  top: -30px;
+}
+
+.nagiosMonitor .el-pagination button:disabled {
+  background-color: #e9e9e9;
+  color: black;
+}
+.nagiosMonitor .el-pagination .btn-next, .el-pagination .btn-prev {
+  background-color: #e9e9e9;
+  color: black;
+}
+
+/* 右侧底部大表格 */
+.nagiosMonitor .na_footer {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+}
+.nagiosMonitor .na_footer th {
+  border: 1px solid #75777b;
+}
+.nagiosMonitor .na_footer  th a div{
+  font-size: 14px;
+  color: white;
+  padding: 5px 10px;
+  text-align: left;
+}
+.nagiosMonitor .na_footer  td {
+  text-align: left;
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid #75777b;
+}
+.nagiosMonitor .na_footer tbody a {
+  color: white;
+}
+.nagiosMonitor .na_footer .th11 {
+  width: 10%;
+}
+.nagiosMonitor .na_footer .down {
+  /* position: relative; */
+  color: #00adff;
+}
+.nagiosMonitor .na_footer .th22 {
+  width: 25%;
+}
+.nagiosMonitor .na_footer .th33 {
+  width: 10%;
+}
+.nagiosMonitor .na_footer .th44 {
+  width: 10%;
+}
+.nagiosMonitor .na_footer .th55 {
+  width: 10%;
+}
+.nagiosMonitor .na_footer .th66 {
+  width: 10%;
+}
+.nagiosMonitor .na_footer .th77 {
+  width: 25%;
+}
+/* ---------------------------------------------- */
+/* 用css消除table自带的内边距和外边距 */
+.nagiosMonitor table{  
+  border-collapse:collapse;  
+  border-spacing:0;  
+  width: 100% !important;
+  }  
+  .nagiosMonitor th,td{  
+  padding:0;  
+  }
+/* 右边 */
+.nagiosMonitor .top_fr {
+  height: 100%;
+}
+.nagiosMonitor .host {
+  /* width: 100px; */
+  height: 100%;
+  margin-right: 25px;
+}
+.nagiosMonitor .service {
+  /* width: 100px; */
+  height: 100%;
+}
+/* ------------------------------------------------- */
+.nagiosMonitor .el-header, .el-footer {
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+  padding: 0px;
+}
+
+.nagiosMonitor .el-aside {
+  color: #333;
+  text-align: center;
+  height: 90%;
+}
+.nagiosMonitor .el-container {
+  background-color: #2f3b52;
+  height: -webkit-fill-available;
+}
+/* -------------------------------- */
+.nagiosMonitor .el-pagination__jump,.el-pager li.btn-quicknext, .el-pager li.btn-quickprev {
+  color: white;
+}
+.nagiosMonitor .el-pager, .el-pager li {
+  background-color: #1d4b7f;
+  color: white;
+  /* height: 0px; */
+}
+.nagiosMonitor .na_footer .table-bordered, thead, tr, th, td {
+  /* border: 1px solid #75777b; */
+}

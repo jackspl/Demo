@@ -1,0 +1,349 @@
+.scenSum .main {
+  text-align: center;
+} 
+.scenSum .el-table .warning-row {
+  background: rgba(229, 236, 175, 0.38);
+} 
+.scenSum .el-button.is-round {
+  padding: 3px 7px;
+} 
+.scenSum .excel {
+  float: right;
+  right: 20px;
+  padding: 3px 7px;
+}
+.scenSum .el-row {
+  position: initial;
+}
+.scenSum .form {
+  padding-top: 10px;
+  white-space: nowrap;
+} 
+.scenSum .el-pagination {
+  float: right;
+  padding-top: 10px;
+} 
+.scenSum .el-form--inline .el-form-item {
+  display: flex;
+}
+.scenSum .el-form--inline .el-form-item__content {
+  flex: 1;
+}
+.scenSum .el-autocomplete {
+  flex: 1;
+}
+.scenSum .el-form--inline .el-form-item__label {
+  white-space: nowrap;
+}
+.scenSum .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+.scenSum .el-form-item__label {
+  padding-right: 5px;
+  text-align: right;
+}
+.scenSum .seach {
+  margin-left: 80px;
+}
+.scenSum .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+.scenSum .el-pagination {
+  float: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+/* 搜索部分 */
+.scenSum .queryBox {
+  width: 100%;
+  height: 40px !important;
+  background-color: #02356f;
+  border: none;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.scenSum .el-form-item {
+  float: left;
+  letter-spacing:2px;
+  margin-bottom: 0px;
+}
+
+.scenSum .el-form-item__label {
+  color: white;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  line-height: 40px;
+}
+.scenSum .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e;
+}
+.scenSum .el-input__prefix {
+  color: #00cbd5;
+}
+.scenSum input::-webkit-input-placeholder {
+  color: white;
+}
+.scenSum input::-moz-input-placeholder {
+  color: white;
+}
+.scenSum input::-ms-input-placeholder {
+  color: white;
+}
+.scenSum .el-button--primary {
+  letter-spacing:2px;
+  box-sizing: border-box;
+  background-color: #3284c3;
+}
+.scenSum .el-button+.el-button {
+  letter-spacing:2px;
+  box-sizing: border-box;
+  background-color: #bfbfbf;
+  color: black;
+  font-weight: 400;
+  
+}
+.scenSum .el-tabs--border-card>.el-tabs__header {
+  border-bottom: 0px;
+}
+/* echarts部分 */
+.scenSum .histogramBox {
+  width: 100%;
+  height: 430px;
+  border: 1px solid #2f69a0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Excel表格部分 */
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+    background-color: #2f69a0;
+    border-radius: 5px;
+}
+.scenSum .el-table--border , .el-table:before{
+  border: 0px;
+}
+.el-table--border,
+.el-table--group {
+    border-color: #2f69a0;
+    border-radius: 5px;
+}
+
+.el-table td,
+.el-table th.is-leaf {
+border-bottom: 1px solid #8094ad;
+}
+
+.el-table--border th,
+.el-table--border th.gutter:last-of-type {
+        border-bottom: 1px solid #344e77;
+}
+
+.el-table--border td{
+  border-right: 1px solid #344e77;
+}
+.el-table--border th {
+border-right: 1px solid #344e77;
+}
+.right .el-tabs--border-card>.el-tabs__content {
+  background-color: #02356f;
+  overflow: none;
+}
+.el-pagination__total {
+  color: white;
+}
+.el-pagination button:disabled {
+  background-color: #02356f;
+  color: white;
+}
+.el-pager, .el-pager li {
+  background-color: #02356f;
+  color: white;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev {
+  background-color: #02356f;
+  color: white;
+}
+
+.el-table tbody tr:hover>td {
+  background-color: #385c95 !important;
+  color: #13eaf2 !important;
+}
+/* 分页背景色 */
+.el-input.is-disabled .el-input__inner {
+  background-color: #02356f;
+
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  background-color: #02356f;
+}
+/* 表格高度40px */
+.scenSum .el-table__header tr,
+  .el-table__header th {
+    padding: 0;
+    height: 40px;
+}
+.scenSum .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    height: 40px;
+}
+/* 表格高亮过渡效果 */
+.scenSum .el-table--enable-row-transition .el-table__body td {
+    -webkit-transition: background-color 0s ease;
+    transition: background-color 0s ease;
+}
+/* --------------------------------------- */
+/* 改版后 */
+/* 修改后的样式 */
+.scenSum .el-form-item__content {
+  float: left;
+}
+.scenSum .queryBox .the1 {
+  width: 360px;
+  float: left;
+}
+.scenSum .queryBox .the1 .el-input--suffix .el-input__inner {
+  width: 263px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.scenSum .queryBox .the2 {
+  width: 60px;
+  float: left;
+}
+.scenSum .queryBox .the2 img{
+  margin-top: 5px;
+}
+.scenSum .queryBox .the3 {
+  width: 400px;
+  float: left;
+  margin-right: 75px;
+}
+.scenSum .queryBox .the3 .el-input {
+  width: 296px;
+}
+.scenSum .queryBox .the3 .el-input--suffix .el-input__inner {
+  width: 296px;
+}
+.scenSum .queryBox .the4 {
+  float: left;
+  width: 296px;
+}
+.scenSum .queryBox .the5 {
+  float: left;
+  width: 296px;
+}
+.scenSum .queryBox .the6 {
+  float: right;
+}
+.scenSum .el-button+.el-button {
+  width: 74px;
+}
+/* ----------- */
+.scenSum .el-col-4 {
+  padding: 10px 10px;
+  box-sizing: border-box;
+  width: 15.66667%;
+  height: 430px;
+  border: 1px solid #00639e;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #164276;
+}
+.scenSum .el-col-4 div{
+  line-height: 30px;
+  color: white;
+}
+.scenSum .el-col-xl-24 {
+  height: 50px;
+}
+.el-input__inner {
+  -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+  transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+.scenSum label {
+  margin-bottom: 0px;
+}
+
+/* ------------------------------------------- */
+/* 搜索框公共样式 */
+.scenSum .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+}
+.scenSum .el-button {
+  border: 0px;
+  padding: 8px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.scenSum .el-date-editor.el-input, .el-date-editor.el-input__inner {
+  width: 202px;
+}
+/* ---------------------------------------------- */
+/* 搜索栏总框 */
+.scenSum .seachSum {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+/* 搜索条件 */
+.scenSum .seachSum .seachCond {
+  /* width: 100px; */
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+/* 图片 */
+.scenSum .seachSum .seachImg {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+.scenSum .seachSum .seachImg .img {
+  margin-top: 3px;
+}
+/* 场景名称 */
+.scenSum .seachSum .sceneName {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+/* 开始时间 */
+.scenSum .seachSum .startTime {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: right;
+}
+/* 结束时间 */
+.scenSum .seachSum .endTime {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: right;
+}
+/* 搜索按钮 */
+.scenSum .seachSum .seachButton {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 6px;
+  float: right;
+}
+.scenSum .el-pagination span:not([class*=suffix]) {
+  height: 30px;
+  line-height: 30px;
+}

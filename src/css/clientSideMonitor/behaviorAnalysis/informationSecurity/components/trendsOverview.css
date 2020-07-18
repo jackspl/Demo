@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: auto;
+  min-width: 1080px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #040f3c;
+}
+
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* 为了兼容IE6,7 */
+.clearfix {
+  *zoom: 1;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.el-tabs--border-card {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+input,
+button {
+  border: 0;
+  outline: none;
+  /*取消轮廓边框*/
+}
+
+ul {
+  list-style: none;
+  /*清除ul前面的原点*/
+}
+
+a {
+  text-decoration: none;
+  /*取消a标签的下划线*/
+  color: #999;
+  font-size: 12px;
+}
+
+.trendsOverview .el-form-item__label {
+  font-size: 14px;
+}
+
+.trendsOverview .el-row {
+  margin-bottom: 20px;
+}
+
+.trendsOverview .el-col {
+  border-radius: 4px;
+}
+
+.trendsOverview .bg-purple-dark {
+  background: #99a9bf;
+}
+
+.trendsOverview .bg-purple {
+  background: #d3dce6;
+}
+
+.trendsOverview .bg-purple-light {
+  background: #e5e9f2;
+}
+
+.trendsOverview .grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.trendsOverview .row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+
+/* 公司搜索条件 */
+/* ---------------------------------------------------------------- */
+.trendsOverview .seachAll {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.trendsOverview .seachAll .starTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+
+.trendsOverview .seachAll .endTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin: 0 10px;
+}
+
+.trendsOverview .seachAll .seach {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+
+.trendsOverview .el-form--inline .el-form-item {
+  margin-right: 0px !important;
+}
+
+.trendsOverview .seachAll .el-form-item__label {
+  font-size: 16px !important;
+  color: white !important;
+  letter-spacing: 5px;
+}
+
+.trendsOverview .seachAll .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 200px !important;
+}
+
+.trendsOverview .seachAll .el-form-item__label {
+  padding: 0 5px 0 0;
+}
+
+.trendsOverview .seachAll .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e !important;
+}
+
+/* 主体一 */
+/* 左面的饼图 */
+.trendsOverview .infoLeft {
+  height: 350px;
+  background-color: #1d4b7f;
+  margin-right: 10px;
+  border: 1px solid #2f69a0;
+}
+
+.trendsOverview #card1 {
+  height: 350px;
+  top: -40px !important;
+}
+
+.trendsOverview #main1 {
+  position: initial !important;
+}
+
+/* 右边的柱状图 */
+.trendsOverview .infoRight {
+  height: 350px;
+  background-color: #1d4b7f;
+  border: 1px solid #2f69a0;
+}
+
+/* 主体二 */
+/* 公司违规排名 */
+.trendsOverview .tit {
+  float: left;
+  font-size: 18px;
+  color: white;
+  width: 60%;
+  text-align: right;
+}
+
+.trendsOverview .tip {
+  float: left;
+  font-size: 14px;
+  color: white;
+  width: 40%;
+  text-align: left;
+  line-height: 30px;
+  color: #ccc;
+}
+
+.trendsOverview .subject1 {
+  height: 40px;
+  /* margin-right: 10px; */
+}
+
+.trendsOverview .mbotton {
+  margin-bottom: 0px;
+}
+
+/* 违规数据 */
+.trendsOverview .subject2 {
+  height: 40px;
+  background-color: #1d4b7f;
+  margin-right: 10px;
+}
+
+.trendsOverview .mr0 {
+
+  margin-right: 0px;
+}
+
+.trendsOverview .el-table th,
+.el-table tr {
+  background-color: #1d4b7f;
+}
+
+.trendsOverview .el-table td,
+.el-table th.is-leaf {
+  border: 0px;
+}
+
+.trendsOverview .el-table--fit {
+  border-radius: 4px;
+  border: 1px solid #2f69a0;
+}
+
+/* 去除1px的白边 */
+.trendsOverview .el-table,
+.el-table__expanded-cell {
+  background-color: #1d4b7f;
+}
+
+/* 给个高度 */
+.trendsOverview .subject2 .el-table__body-wrapper {
+  height: 380px;
+  color: #afb4bb;
+}
+
+.trendsOverview .colorBoxs {
+  /* position: relative; */
+  width: 100%;
+}
+
+.trendsOverview .el-col-6 .subject2 .el-table__body-wrapper {
+  height: 400px;
+  color: #afb4bb;
+}
+
+.trendsOverview .el-col-9 .subject2 .el-table__body-wrapper {
+  height: 400px;
+  color: #afb4bb;
+}
+
+.trendsOverview .colorBoxs .colorChildren {
+  position: absolute;
+  height: 20px;
+}
+
+.trendsOverview .el-table .cell {
+  height: 20px;
+  padding: 0 !important;
+}
+
+.trendsOverview .el-table__body td {
+  height: 37px;
+}
+
+/* ====================================== */
+/* 部门搜索条件 */
+.trendsOverview .department {
+  margin-bottom: 0px;
+}
+
+
+.el-input__inner {
+  -webkit-transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+  transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+}
+
+.trendsOverview .el-table:before {
+  height: 0px;
+}
+
+.trendsOverview .el-table:before {
+  border: 0px;
+}
+
+/* 所有搜索框的高度 */
+.trendsOverview .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00639e;
+  background-color: #083760;
+  color: white;
+}
+
+/* 搜索按钮 */
+.trendsOverview .el-button--primary {
+  height: 30px;
+}
+
+.trendsOverview .el-button {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+/* 异常操作公司排名分页样式 */
+.trendsOverview .el-table--fit {
+  border-top: 0px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.trendsOverview .comTop {
+  position: relative;
+  color: #909399;
+  /* height: 30px; */
+  line-height: 20px;
+  border: 1px solid #2f69a0;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+  /* margin-bottom: 20px; */
+}
+
+.trendsOverview .comTop ul li {
+  float: left;
+}
+
+.trendsOverview .comTop .comTop0 {
+  width: 10%;
+  text-align: center;
+}
+
+.trendsOverview .comTop .comTop1 {
+  width: 35%;
+  text-align: center;
+}
+
+.trendsOverview .comTop .comTop2 {
+  width: 30%;
+  text-align: center;
+}
+
+.trendsOverview .comTop .comTop3 {
+  width: 35%;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.trendsOverview .comPag {
+  position: relative;
+  top: -30px;
+  float: right;
+}
+
+.trendsOverview .abnPage .el-pagination button:disabled,
+.el-pager,
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination .btn-prev {
+  background-color: #1d4b7f;
+}
+.trendsOverview .el-pagination span:not([class*=suffix]) {
+  height: 22px;
+    line-height: 22px;
+}
+/* 异常操作个人排名分页 */
+.trendsOverview .personTop {
+  position: relative;
+  color: #909399;
+  /* height: 30px; */
+  line-height: 20px;
+  border: 1px solid #2f69a0;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+  /* margin-bottom: 20px; */
+}
+
+.trendsOverview .personTop ul li {
+  float: left;
+}
+
+.trendsOverview .personTop .personTop0 {
+  width: 10%;
+  text-align: center;
+}
+
+.trendsOverview .personTop .personTop1 {
+  width: 25%;
+  text-align: center;
+}
+
+.trendsOverview .personTop .personTop2 {
+  width: 10%;
+  text-align: center;
+}
+
+.trendsOverview .personTop .personTop3 {
+  width: 55%;
+  text-align: center;
+}
+
+.trendsOverview .personTop .personTop4 {
+  width: 10%;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+/* .trendsOverview .footerSum .pag .el-pagination button,
+.el-pagination span:not([class*=suffix]),
+.el-pagination button,
+.el-pagination span:not([class*=suffix]),
+.el-pager li { */
+  /* height: 22px !important;
+  line-height: 22px !important; */
+/* } */
+
+.trendsOverview .el-pager li {
+  background-color: #1d4b7f;
+}
+
+.trendsOverview .el-pagination .btn-prev {
+  background-color: #1d4b7f;
+}
+
+.trendsOverview .el-pagination .btn-next {
+  background-color: #1d4b7f;
+}

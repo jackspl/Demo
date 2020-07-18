@@ -1,0 +1,162 @@
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after { 
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.clearfix {
+	*zoom:1;
+}
+.informationSecurity .el-tabs__content {
+    overflow: inherit;
+}
+/* KPI顶部样式 */
+/* 点击天周月改变背景色 */
+.informationSecurity .el-tabs__item.is-active {
+    background-color: #596c7e;
+}
+.informationSecurity .el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+/* kpi上下边框颜色 */
+.informationSecurity .el-tabs--card>.el-tabs__header .el-tabs__nav {
+    border: 1px solid #3279a9;
+}
+/* kpi左右边框颜色 */
+.informationSecurity  .el-tabs--card>.el-tabs__header .el-tabs__item {
+    border-left: 1px solid #3279a9;
+}
+/* kpi点击底边框为零 */
+.informationSecurity .el-tabs--card>.el-tabs__header .el-tabs__item {
+    border-bottom: 0px;
+}
+/* kpi默认颜色 */
+.informationSecurity .el-tabs__item {
+color: white;
+}
+/* kpi点击后颜色 */
+.informationSecurity #tab-seven {
+color: white;
+}
+/* 表单下边距清零 */
+.informationSecurity .el-form-item {
+    margin-bottom: 0px;
+}
+
+/* 信息安全数据小图标样式 */
+.informationSecurity .informationSecurityNum {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* line-height: 56px; */
+    border-radius: 55px;
+    color: white;
+    background-color: #ff0420;
+    top: -31px;
+    z-index: 3;
+    display: block;
+    left: 263px;
+}
+.informationSecurity .informationSecurityNum p {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-family: Microsoft YaHei;
+}
+/* =============================================== */
+.informationSecurity .informationSecurityNum1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* line-height: 56px; */
+    border-radius: 55px;
+    color: white;
+    background-color: #ff0420;
+    top: -31px;
+    z-index: 3;
+    display: block;
+    left: 363px;
+}
+.informationSecurity .informationSecurityNum1 p {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-family: Microsoft YaHei;
+}
+/* ==================================================== */
+.informationSecurity .informationSecurityNum2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* line-height: 56px; */
+    border-radius: 55px;
+    color: white;
+    background-color: #ff0420;
+    top: -31px;
+    z-index: 3;
+    display: block;
+    left: 464px;
+}
+.informationSecurity .informationSecurityNum2 p {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-family: Microsoft YaHei;
+}
+/* ================================= */
+.informationSecurity .informationSecurityNum3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* line-height: 56px; */
+    border-radius: 55px;
+    color: white;
+    background-color: #ff0420;
+    top: -31px;
+    z-index: 3;
+    display: block;
+    left: 564px;
+}
+.informationSecurity .informationSecurityNum3 p {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-family: Microsoft YaHei;
+}
+.informationSecurity .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+    width: 116px;
+    text-align: center;
+}
+/* .informationSecurity  .el-tabs--border-card>.el-tabs__header  .el-tabs__item.is-active .firstWidth {
+    width: 72px;
+    text-align: center;
+} */

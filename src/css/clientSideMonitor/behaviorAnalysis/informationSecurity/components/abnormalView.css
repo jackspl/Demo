@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+html,
+#app {
+    width: 100%;
+    height: auto;
+    min-width: 1080px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #040f3c;
+}
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after { 
+	content:"";
+  display:table;
+  
+}
+.clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.clearfix {
+	*zoom:1;
+}
+blockquote, body, button, dd, dl, dt, fieldset,
+form, h1, h2, h3, h4, h5, h6, hr, input, legend,
+li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+input, button {
+    border: 0;
+    outline: none; /*取消轮廓边框*/
+}
+
+ul {
+    list-style: none; /*清除ul前面的原点*/
+}
+
+a {
+    text-decoration: none; /*取消a标签的下划线*/
+    color: #999;
+    font-size: 12px;
+}
+/* ------------------------------------------------------ */
+.abnormalView .el-form-item__label {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: white;
+    letter-spacing: 5px;
+}
+.abnormalView .seachF1 {
+    width: 620px;
+    float: left;
+}
+.abnormalView .seachF1 .searchCriteria {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-bottom: 10px;
+}
+.abnormalView .seachF1 .searchCriteria .el-input__inner {
+    width: 442px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalView .seachF1 .searchImg{
+    width: 50px;
+    height: 42px;
+    /* line-height: 42px;
+    padding-left: 24px; */
+    float: left;
+    background-color: #1d4b7f;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+  }
+  /* --------------------- */
+  .abnormalView .userInfoAll {
+    width: 100%;
+    padding: 10px 0px;
+    height: 40px;
+}
+.abnormalView .el-input__inner {
+    color: white;
+}
+.abnormalView .userInfoAll .el-select .el-input .el-select__caret {
+    display: none;
+}
+.abnormalView .userInfoAll .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #0d4274
+  }
+.abnormalView .userInfoAll .userInfo {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+
+.abnormalView .userInfoAll .userInfoCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    /* padding-left: 10px;
+    padding-right: 20px; */
+}
+.abnormalView .userInfoAll .userInfoCompany .el-input__inner {
+    width: 110px;
+}
+.abnormalView .userInfoAll .userInfoDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    /* padding-right: 20px; */
+}
+.abnormalView .userInfoAll .userInfoDep .el-input__inner {
+    width: 90px;
+}
+.abnormalView .userInfoAll .userChange {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 16px;
+    /* margin-right: 20px; */
+}
+.abnormalView .userInfoAll .userChange .el-input__inner {
+    width: 90px;
+}
+
+.abnormalView .seachF2 {
+    
+    float: left;
+}
+.abnormalView .seachF2 .el-input__inner {
+    color: white;
+}
+.abnormalView .seachF2 .el-form--inline .el-form-item {
+    margin-right: 0px;
+}
+.abnormalView .seachF2 .seachStarTime {
+    height: 42px;
+    width: 350px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-bottom: 10px;
+    /* padding-right: 17px; */
+    box-sizing: border-box;
+  }
+  .abnormalView .seachF2 .seachStarTime .el-input__suffix {
+      padding-right: 26px;
+  }
+  .abnormalView .seachF2 .seachStarTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalView .seachF2 .seachStarTime .el-date-editor.el-input {
+      width: 220px;
+  }
+  .abnormalView .seachF2 .seachEndTime {
+    height: 42px;
+    width: 330px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .abnormalView .seachF2 .seachEndTime .el-input__suffix {
+    padding-right: 22px;
+}
+  .abnormalView .seachF2 .seachEndTime .el-date-editor.el-input {
+      width: 216px !important;
+  }
+  .abnormalView .seachF2 .seachEndTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalView .seachF2 .seachEndTime .el-date-editor.el-input {
+    width: 220px;
+}
+.abnormalView .seachF2 .infoMation {
+}
+.abnormalView .userInfoAll {
+    width: 100%;
+    padding: 10px 0px;
+    height: 40px;
+}
+.abnormalView .seachF2 .userInfoAll .infoHost {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalView .seachF2 .userInfoAll .infoHostCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalView .seachF2 .userInfoAll .infoHostCompany .el-input__inner {
+    width: 120px;
+}
+.abnormalView .seachF2 .userInfoAll .infoHostDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    
+}
+.abnormalView .seachF2 .userInfoAll .infoHostDep .el-input__inner {
+    width: 120px;
+}
+.abnormalView .seachF2 .userInfoAll .infoHostName {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 10px;
+    
+}
+.abnormalView .seachF2 .userInfoAll .infoHostName .el-input__inner {
+    width: 120px;
+}
+.abnormalView label {
+    max-width: 100%;
+    margin-bottom: 0px !important;
+    font-weight: 400 !important;
+}
+.abnormalView .seachF3 {
+    /* width: 208px; */
+    height: 94px;
+    padding: 5px 10px 0 10px;
+    float: left;
+    margin-right: 18px;
+    background-color: #1d4b7f;
+    box-sizing: border-box;
+}
+/* 滑动按钮 */
+.abnormalView .changeButton {
+    float: right;
+    width: 205px;
+    height: 30px;
+    border: 1px solid #3279a9;
+    border-radius: 60px;
+    
+}
+.abnormalView .changeButton .allButton {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.abnormalView .changeButton .abnormalButton {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.textColor {
+    background-color: #3a81d6;
+    color: white !important;
+    border-radius: 30px;
+}
+.seachF3 .acrossDepView {
+    margin-top: 40px;
+    /* margin-left: 20px; */
+}
+.seachF3 .acrossDepView  .el-switch__label--left {
+    position: absolute;
+    display: block;
+    width: 100px;
+    left: 50px;
+}
+.seachF3 .acrossDepView .el-switch__label {
+    color: white;
+}
+.seachF3 .acrossDepView .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .acrossDepView .el-switch__core {
+    height: 10px;
+}
+.seachF3 .acrossDepView .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+/* ----------------------------- */
+.seachF3 .confDocumentsView {
+    /* margin-left: 20px; */
+}
+.seachF3 .confDocumentsView .el-switch__label {
+    color: white;
+    position: absolute;
+    display: block;
+    width: 120px;
+    left: 50px;
+}
+.seachF3 .confDocumentsView .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .confDocumentsView .el-switch__core {
+    height: 10px;
+}
+.seachF3 .confDocumentsView .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.seachF3 .confDocumentsView {}
+.abnormalView .seachF4 {
+    float: right;
+    height: 90px;
+    /* margin-right: 20px; */
+}
+.abnormalView .seachF4 {
+
+    text-align: right;
+}
+.abnormalView .seachF4 .seachBtn {
+    margin-top: 54px;
+}
+.abnormalView .seachAllSum {
+    margin-bottom: 30px;
+    height: 90px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+/* 分页样式 */
+.abnormalView .paging {
+    /* width: 34.2%; */
+    /* margin-top: 10px; */
+}
+
+.abnormalView .paging .el-input__inner {
+    background-color: blue;
+    width: 120px;
+    border: 1px solid #00639e;
+    background-color: #083760;
+    color: white;
+}
+.abnormalView .paging .el-select .el-input__inner {
+    margin-top: 0px;
+}
+.abnormalView .paging .el-pagination{
+    text-align: right;
+    margin-top: 10px;
+}
+.abnormalLogin .el-pagination{
+    padding: 0px;
+}
+.el-input__inner {
+    -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+    transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+
+.abnormalView .el-table::before {
+    border: 0px;
+    background-color: #00639e;
+    
+}

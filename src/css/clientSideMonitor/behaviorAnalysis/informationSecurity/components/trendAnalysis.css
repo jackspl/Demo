@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: auto;
+  min-width: 1080px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #040f3c;
+}
+
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* 为了兼容IE6,7 */
+.clearfix {
+  *zoom: 1;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.el-tabs--border-card {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+input,
+button {
+  border: 0;
+  outline: none;
+  /*取消轮廓边框*/
+}
+
+ul {
+  list-style: none;
+  /*清除ul前面的原点*/
+}
+
+a {
+  text-decoration: none;
+  /*取消a标签的下划线*/
+  color: #999;
+  font-size: 12px;
+}
+
+.trendAnalysis .el-form-item__label {
+  font-size: 14px;
+}
+
+.trendAnalysis .el-row {
+  margin-bottom: 20px;
+
+}
+
+.trendAnalysis .el-col {
+  border-radius: 4px;
+}
+
+.trendAnalysis .bg-purple-dark {
+  background: #99a9bf;
+}
+
+.trendAnalysis .bg-purple {
+  background: #d3dce6;
+}
+
+.trendAnalysis .bg-purple-light {
+  background: #e5e9f2;
+}
+
+.trendAnalysis .grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.trendAnalysis .row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+
+/* 搜索条件 */
+.trendAnalysis .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+
+.trendAnalysis .el-form--inline .el-form-item {
+  margin-right: 0px;
+}
+
+.trendAnalysis .seachSum {
+  margin-bottom: 0px;
+}
+
+.trendAnalysis .seachCond .el-input {
+  width: 180px;
+}
+
+.trendAnalysis .el-col-10 {
+  width: 60.66667%;
+}
+
+.trendAnalysis .bg-purple {
+  background-color: #02356f;
+
+}
+
+.trendAnalysis .bg-purple-light {
+  background-color: #02356f;
+}
+
+.trendAnalysis .span8 {
+  /* text-align: right; */
+  width: 39.66667%;
+}
+
+.trendAnalysis .span6 {
+  text-align: right;
+  width: 14.83333%;
+  background-color: #02356f;
+}
+
+.trendAnalysis .span4 {
+  text-align: right;
+  width: 9.66667%;
+}
+
+.trendAnalysis .el-input {
+  /* border: 1px solid #00639e; */
+  border: 0px !important;
+  border-radius: 5px;
+}
+
+.trendAnalysis .el-form-item__label {
+  font-size: 16px !important;
+  color: white !important;
+  letter-spacing: 5px;
+}
+
+.trendAnalysis .el-form-item__label {
+  padding: 0 5px 0 0;
+}
+
+.trendAnalysis .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e !important;
+}
+
+/* 主体一 */
+/* 左面的饼图 */
+.trendAnalysis .infoLeft {
+  height: 380px;
+  background-color: #1d4b7f;
+  margin-right: 10px;
+  border: 1px solid #2f69a0;
+}
+
+.trendAnalysis #card1 {
+  height: 380px;
+  top: -40px !important;
+}
+
+.trendAnalysis #card2 {
+  height: 380px;
+  /* top: -40px !important; */
+}
+
+.trendAnalysis #main1 {
+  position: initial !important;
+}
+
+/* 右边的柱状图 */
+.trendAnalysis .infoRight {
+  height: 380px;
+  background-color: #1d4b7f;
+  border: 1px solid #2f69a0;
+}
+
+/* 主体二 */
+/* 公司违规排名 */
+.trendAnalysis .tit {
+  float: left;
+  font-size: 18px;
+  color: white;
+  width: 60%;
+  text-align: right;
+}
+
+.trendAnalysis .tip {
+  float: left;
+  font-size: 14px;
+  color: white;
+  width: 40%;
+  text-align: left;
+  line-height: 30px;
+  color: #ccc;
+}
+
+.trendAnalysis .subject1 {
+  height: 40px;
+
+  margin-right: 10px;
+}
+
+.trendAnalysis .mbotton {
+  margin-bottom: 0px;
+}
+
+/* 违规数据 */
+.trendAnalysis .subject2 {
+  height: 40px;
+  background-color: #1d4b7f;
+  margin-right: 10px;
+}
+
+.trendAnalysis .el-table th,
+.el-table tr {
+  background-color: #1d4b7f;
+}
+
+.trendAnalysis .el-table td,
+.el-table th.is-leaf {
+  border: 0px;
+}
+
+.trendAnalysis .el-table--fit {
+  border: 1px solid red;
+  border-radius: 4px;
+  border: 1px solid #2f69a0;
+}
+
+/* 去除1px的白边 */
+.trendAnalysis .el-table,
+.el-table__expanded-cell {
+  background-color: #1d4b7f;
+}
+
+/* 给个高度 */
+.trendAnalysis .subject2 .el-table__body-wrapper {
+  height: 380px;
+}
+
+.trendAnalysis .colorBoxs {
+  /* position: relative; */
+  width: 100%;
+}
+
+.trendAnalysis .colorBoxs .colorChildren {
+  position: absolute;
+  height: 20px;
+}
+
+.trendAnalysis .el-table .cell {
+  height: 20px;
+}
+
+.trendAnalysis .el-table__body td {
+  height: 37px;
+}
+
+/* 搜索条件下拉菜单 */
+.trendAnalysis .seachSum .bg-purple .el-select {
+  width: 166px;
+}
+
+/* 公司下拉菜单 */
+.trendAnalysis .company .el-input {
+  width: 300px;
+}
+
+.trendAnalysis .company .el-input--suffix .el-input__inner {
+  padding-right: 6px;
+}
+
+.trendAnalysis .company .el-input .el-select__caret {
+  display: none;
+}
+
+
+/* 个人异常主体高度 */
+.trendAnalysis .infoLeft3 {
+  height: 400px;
+  background-color: #1d4b7f;
+  margin-right: 10px;
+  border: 1px solid #2f69a0;
+}
+
+/* 右边的柱状图 */
+.trendAnalysis .infoRight3 {
+  height: 400px;
+  background-color: #1d4b7f;
+  border: 1px solid #2f69a0;
+}
+
+/* 向下.2rem */
+.trendAnalysis .mb10 {
+  margin-bottom: 10px;
+}
+
+.trendAnalysis .mb20 {
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------- */
+.trendAnalysis .seachAll {
+  padding-top: 10px;
+  /* margin-bottom: 10px; */
+  box-sizing: border-box;
+}
+
+.trendAnalysis .seachAll .searchCriteria {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+
+.trendAnalysis .seachAll .seachImg {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-top: -3px;
+  margin-right: 20px;
+}
+
+.trendAnalysis .seachAll .seachCompany {
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 222px;
+}
+
+.trendAnalysis .seachAll .seachStarTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin-right: 10px;
+}
+
+.trendAnalysis .seachAll .seachEndTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin-right: 15px;
+}
+
+.trendAnalysis .seachAll .seachButton {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+
+/* ---------------- */
+/* 部门趋势分析
+搜索查询 */
+.trendAnalysis .depSeachAll {
+  width: 100%;
+  height: 40px;
+  /* padding: 10px 0 0 0; */
+}
+
+.trendAnalysis .depSeachAll .searchCriteria {
+  height: 40px;
+  float: left;
+}
+
+.trendAnalysis .depSeachAll .searchCriteria .el-input__inner {
+  width: 252px;
+}
+
+.trendAnalysis .depSeachAll .seachImg {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.trendAnalysis .depSeachAll .searchCompany {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.trendAnalysis .depSeachAll .searchCompany .el-input__inner {
+  width: 150px;
+}
+
+.trendAnalysis .depSeachAll .searchDep {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 115px;
+}
+
+.trendAnalysis .depSeachAll .searchDep .el-input__inner {
+  width: 215px;
+}
+
+.trendAnalysis .depSeachAll .seachStarTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin-right: 10px;
+}
+
+.trendAnalysis .depSeachAll .seachStarTime .el-input__inner {
+  width: 136px;
+}
+
+.trendAnalysis .depSeachAll .seachEndTime {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+  margin-right: 10px;
+}
+
+.trendAnalysis .depSeachAll .seachEndTime .el-input__inner {
+  width: 136px;
+}
+
+.trendAnalysis .el-date-editor.el-input {
+  width: 136px;
+}
+
+.trendAnalysis .depSeachAll .seachButton {
+  height: 40px;
+  line-height: 40px;
+  float: right;
+}
+
+.el-input__inner {
+  -webkit-transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+  transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+}
+
+/* 所有搜索框的高度 */
+.trendAnalysis .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #00639e;
+  background-color: #083760;
+  color: white;
+}
+
+/* 搜索按钮 */
+.trendAnalysis .el-button--primary {
+  height: 30px;
+}
+
+.trendAnalysis .el-button {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.trendAnalysis .el-pagination__total {
+  line-height: 20px;
+}

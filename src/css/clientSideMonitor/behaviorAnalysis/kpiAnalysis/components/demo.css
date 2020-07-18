@@ -1,0 +1,746 @@
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after { 
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.clearfix {
+	*zoom:1;
+}
+.kpiTrendAnalysis .el-tabs__content {
+    overflow: inherit;
+}
+/* KPI顶部样式 */
+/* 点击天周月改变背景色 */
+.kpiTrendAnalysis .el-tabs__item.is-active {
+    background-color: #596c7e;
+}
+/* kpi上下边框颜色 */
+.kpiTrendAnalysis .el-tabs--card>.el-tabs__header .el-tabs__nav {
+    border: 1px solid #3279a9;
+}
+/* kpi左右边框颜色 */
+.kpiTrendAnalysis  .el-tabs--card>.el-tabs__header .el-tabs__item {
+    border-left: 1px solid #3279a9;
+}
+/* kpi点击底边框为零 */
+.kpiTrendAnalysis .el-tabs--card>.el-tabs__header .el-tabs__item {
+    border-bottom: 0px;
+}
+/* kpi默认颜色 */
+.kpiTrendAnalysis .el-tabs__item {
+color: white;
+}
+/* kpi点击后颜色 */
+.kpiTrendAnalysis #tab-seven {
+color: white;
+}
+/* 表单下边距清零 */
+.kpiTrendAnalysis .el-form-item {
+    margin-bottom: 5px;
+}
+/* 每个kpi长度 */
+.kpiTrendAnalysis .el-tabs--card>.el-tabs__header .el-tabs__item {
+    width: 120px;
+    text-align: center;
+}
+/* KPI排名下面的大框 */
+/* .kpiTrendAnalysis .el-tabs__content {
+    border-radius: 5px;
+    border: 1px solid #2f69a0;
+} */
+/* 日期边框样式 */
+.kpiTrendAnalysis .el-input {
+    border: 1px solid #00639e;
+    border-radius: 5px;
+    margin-top: 5px;
+    /* height: 33px;
+    line-height: 30px; */
+}
+.kpiTrendAnalysis .el-input__inner {
+    /* height: 33px;
+    line-height: 30px; */
+}
+.kpiTrendAnalysis .el-select .el-input .el-select__caret {
+    line-height: 30px;
+}
+.kpiTrendAnalysis  .el-input__icon {
+    line-height: 30px;
+}
+/* 日期边框长度 */
+.kpiTrendAnalysis .el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 132px;
+}
+
+/* 查询时间的背景色，字体颜色 */
+.kpiTrendAnalysis .el-input__inner {
+    background-color: #083760;
+    color: white;
+}
+
+/* 开始时间、结束时间字体颜色 */
+.kpiTrendAnalysis .el-form-item__label {
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    /* line-height: 30px; */
+    padding-right: 0px;
+}
+/* 时间前面的ico图标颜色 */
+.kpiTrendAnalysis .el-input__prefix {
+    color: #00cbd5;
+}
+/* 日期边框样式 */
+.kpiTrendAnalysis input{
+    border: none!important;
+    outline:none;cursor: pointer;
+}
+/* ------------------------------------------------- */
+/* 公司kpl样式 */
+.kpiTrendAnalysis .company {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+/* 标题 */
+.kpiTrendAnalysis .company .one {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* 时间 */
+.kpiTrendAnalysis .company .two {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+/* 开始时间 */
+.kpiTrendAnalysis .company .startTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+/* 结束时间 */
+.kpiTrendAnalysis .company .endTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .three{
+    height: 60px;
+}
+/* 查询按钮 */
+.kpiTrendAnalysis .company .seach {
+    float: right;
+}
+/* 查询按钮长度 */
+.kpiTrendAnalysis .company .seach .el-button--primary {
+    width: 100px;
+}
+.kpiTrendAnalysis .four {
+    width: 100%;
+    height: 320px;
+    /* overflow: hidden; */
+    /* clear:both */
+    display: inline-block;
+}
+.kpiTrendAnalysis .four .four_left {
+    width: 19%;
+    height: 100%;
+    border: 1px solid #2f69a0;
+    float: left;
+    box-sizing: border-box;
+}
+.kpiTrendAnalysis .four .four_right {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid rgb(241, 17, 211); */
+    float: right;
+    box-sizing: border-box;
+}
+.kpiTrendAnalysis .four .four_right .right_1{
+    width: 33.333%;
+    height: 100%;
+    border: 1px solid #2f69a0;
+    float: left;
+    box-sizing: border-box;
+}
+/* 公司KPI贡献样式 */
+.kpiTrendAnalysis .fll {
+    float: left;
+    width: 25%;
+    background: #1d4b7f;;
+border-radius: 3px;
+    border: 1px solid #2f69a0;
+    min-height: 320px;
+    margin: 0 10px;
+   
+}
+.kpiTrendAnalysis .title {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.kpiTrendAnalysis .menu {
+    width: 100%;
+    text-align: center;
+}
+.kpiTrendAnalysis .menu .dior {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.kpiTrendAnalysis .el-radio {
+    color: #cccccc;
+}
+.kpiTrendAnalysis .el-radio__input.is-checked+.el-radio__label {
+    color: #cccccc;
+    font-size: 12px;
+}
+.kpiTrendAnalysis .el-radio__inner {
+    background-color:#cccccc;
+    width: 12px;
+    height: 12px;
+}
+
+
+.kpiTrendAnalysis .four_right .title {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.kpiTrendAnalysis .el-row {
+    margin-bottom: 20px;
+   
+  }
+  .kpiTrendAnalysis .el-col {
+    border-radius: 4px;
+  }
+  .kpiTrendAnalysis .bg-purple-dark {
+    background: #99a9bf;
+  }
+  .kpiTrendAnalysis .bg-purple {
+    background: #1d4b7f;
+  }
+ .kpiTrendAnalysis  .bg-purple-light {
+    background: #e5e9f2;
+  }
+ .kpiTrendAnalysis  .grid-content {
+    border-radius: 3px;
+    border: 1px solid #2f69a0;
+    min-height: 320px;
+  }
+ .kpiTrendAnalysis  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+  .kpiTrendAnalysis .el-col-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 26.2%;
+  }
+  .kpiTrendAnalysis .el-col-5 {
+    padding-left: 20px !important;
+    padding-right: 10px;
+  }
+  .kpiTrendAnalysis #card1 {
+      height: 290px;
+      top: -40px !important;
+  }
+  .kpiTrendAnalysis #main1 {
+    position: initial !important;
+}
+  .kpiTrendAnalysis .menu2 {
+    width: 45%;
+    text-align: center;
+    background-color: #345d8c;
+    height: 30px;
+    line-height: 27px;
+    margin: 10px;
+    margin-left: 28%;
+}
+.kpiTrendAnalysis .menu2 .dior {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+/* 表格表头 */
+.kpiTrendAnalysis .tabTile {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #ccc;
+}
+.kpiTrendAnalysis .tabTile ul li {
+    display: block;
+    width: 100%;
+}
+.kpiTrendAnalysis .tabTile ul .li1 {
+    width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.kpiTrendAnalysis .tabTile ul .li2 {
+    
+    text-align: center;
+    display: block;
+    width: 20%;
+    float: left;
+}
+.kpiTrendAnalysis .tabTile ul .li3 {
+    
+    text-align: center;
+    display: block;
+    float: left;
+    width: 20%;
+}
+/* 去除1px的白边 */
+.kpiTrendAnalysis  .el-table, .el-table__expanded-cell {
+    background-color: #1d4b7f;
+}
+
+/* 最近事件高度 */
+#recentEvents{
+    height: 200px;
+    overflow: hidden;
+}
+.kpiTrendAnalysis .tableBox th {
+    padding: 0 !important;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+}
+.kpiTrendAnalysis .tableBox td {
+    padding: 0 !important;
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+
+}
+.kpiTrendAnalysis .el-table th, .el-table tr {
+    background-color: #1d4b7f;
+}
+.kpiTrendAnalysis .el-table td, .el-table th.is-leaf {
+    border: 0px;
+}
+.kpiTrendAnalysis .el-table th>.cell, .el-table .cell, .el-progress__text {
+    color: #ccc;
+}
+/* 鼠标经过表格显示背景色 */
+.el-table tbody tr:hover>td { background-color: #1d4b7f !important }
+
+ /* 删除表格下横线 */
+.el-table::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    }
+    /* 进度条总长度样式 */
+.kpiTrendAnalysis .el-progress-bar__outer {
+    /* height: 20px !important;
+    border-radius: 0px; */
+    background-color: #1d4b7f;
+    /* height: 20px !important; */
+    border-radius: 0px;
+    width: 90px;
+}
+.el-progress-bar__inner {
+    border-radius: 0px;
+    float: left;
+}
+.kpiTrendAnalysis .beiJinNum {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.kpiTrendAnalysis .sequentialImg {
+    margin-top: 5px;
+    margin-left: -58px;
+}
+.kpiTrendAnalysis .sequentialNum {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 12px;
+}
+.kpiTrendAnalysis .sequentialNumRed {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 12px;
+    color: red;
+}
+.el-progress__text {
+    font-size: 12px !important;
+}
+/* 
+.el-progress-bar__inner1 {
+    background-color: #f810d9;
+}
+.el-progress-bar__inner2 {
+    background-color: #e78b57;
+}
+.el-progress-bar__inner3 {
+    background-color: #dede66;
+}
+.el-progress-bar__inner4 {
+    background-color: #84c9c9;
+}
+.progress{
+    width: 168px;
+    height: 20px;
+    color:#f00;
+    background:#EFEFF4;
+    border-radius: 0.1rem;
+}
+.progress2{
+    width: 168px;
+    height: 20px;
+    color:#f00;
+    background:rgb(173, 9, 173);
+    border-radius: 0.1rem;
+}
+.progress3{
+    width: 168px;
+    height: 20px;
+    color:#f00;
+    background:rgb(23, 23, 204);
+    border-radius: 0.1rem;
+}
+.progress4{
+    width: 168px;
+    height: 20px;
+    color:#f00;
+    background:rgb(76, 238, 12);
+    border-radius: 0.1rem;
+} */
+/* 表示总长度背景色 */
+.progress::-webkit-progress-bar{     
+    background-color: #f2f2f2;
+    border-radius: 0.2rem;
+}
+/* 表示已完成进度背景色 */
+.progress::-webkit-progress-value{
+      background: #a21211;
+      border-radius: 0.2rem; 
+}
+/* ---------------------------------------------- */
+/* 部门kpl样式 */
+.kpiTrendAnalysis .department {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+/* 标题 */
+.kpiTrendAnalysis .department .one {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* 时间 */
+.kpiTrendAnalysis .department .two {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+/* 开始时间 */
+.kpiTrendAnalysis .department .startTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+/* 结束时间 */
+.kpiTrendAnalysis .department .endTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .three{
+    height: 60px;
+}
+/* 查询按钮 */
+.kpiTrendAnalysis .department .seach {
+    float: right;
+}
+/* 查询按钮长度 */
+.kpiTrendAnalysis .department .seach .el-button--primary {
+    width: 100px;
+}
+/* 公司下拉菜单 */
+.kpiTrendAnalysis .department .dropDownCompany {
+    left: 15px;
+    position: absolute;
+}
+.kpiTrendAnalysis .department .dropDownSeach {
+    float: right;
+}
+.kpiTrendAnalysis #card2 {
+    height: 290px;
+    top: -40px !important;
+}
+.kpiTrendAnalysis #card4 {
+    height: 470px;
+    /* top: -40px !important; */
+}
+.kpiTrendAnalysis #main2 {
+  position: initial !important;
+}
+/* ------------------------------------------------------ */
+/* 员工kpl样式 */
+
+.kpiTrendAnalysis .employees {
+    width: 100%;
+    height: 530px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+/* 标题 */
+.kpiTrendAnalysis .employees .one {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* 时间 */
+.kpiTrendAnalysis .employees .two {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+/* 开始时间 */
+.kpiTrendAnalysis .employees .startTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+/* 结束时间 */
+.kpiTrendAnalysis .employees .endTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .three{
+    height: 60px;
+}
+/* 查询按钮 */
+.kpiTrendAnalysis .employees .seach {
+    float: right;
+}
+/* 查询按钮长度 */
+.kpiTrendAnalysis .employees .seach .el-button--primary {
+    width: 100px;
+}
+/* 公司下拉菜单 */
+.kpiTrendAnalysis .employees .dropDownCompany {
+    left: 15px;
+    position: absolute;
+}
+.kpiTrendAnalysis .employees .dropDownSeach {
+    float: right;
+}
+.kpiTrendAnalysis #card3 {
+    height: 340px;
+    top: -40px !important;
+}
+.kpiTrendAnalysis #main3 {
+  position: initial !important;
+}
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* KPI趋势分析样式 */
+/* 公司kpl样式 */
+
+/* 开始时间 */
+/* 集团KPI样式 */
+.kpiTrendAnalysis .groupKPI {
+    height: 536px;
+    /* border: 1px solid #2f69a0; */
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.kpiTrendAnalysis .el-input--suffix .el-input__inner {
+    /* padding: 0 15px 0 30px; */
+}
+.kpiTrendAnalysis .el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.kpiTrendAnalysis .groupKPI .seachSum {
+    height: 30px;
+    margin-bottom: 20px;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .el-row {
+    margin-bottom: 20px;
+  }
+ .kpiTrendAnalysis .groupKPI .seachSum  .el-col {
+    border-radius: 4px;
+  }
+ .kpiTrendAnalysis .groupKPI .seachSum  .bg-purple-dark {
+    background: #99a9bf;
+  }
+.kpiTrendAnalysis .groupKPI .seachSum   .bg-purple {
+    background: #02356f;
+  }
+.kpiTrendAnalysis .groupKPI .seachSum   .bg-purple-light {
+    background: #02356f;
+  }
+.kpiTrendAnalysis .groupKPI .seachSum   .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+.kpiTrendAnalysis .groupKPI .seachSum   .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
+  .kpiTrendAnalysis .grid-content {
+      border: 0px;
+  }
+  .kpiTrendAnalysis .groupKPI .seachSum .grid-content {
+      line-height: 40px;
+      min-height: 40px;
+  }
+/* 三个单选按钮 */
+.kpiTrendAnalysis .groupKPI .seachSum .threeRaido {
+    /* float: left;
+    height: 40px; */
+}
+.kpiTrendAnalysis .groupKPI .seachSum .threeRaido .el-radio-group {
+    /* height: 39px; */
+    line-height: 50px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+    padding-left: 5px;
+    height: 41px;
+    line-height: 50px;
+    margin-top: -3px;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .threeRaido .el-radio {
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .threeRaido .threeRadio3 {
+    margin-right: 0px;
+}
+/* 三个复选框按钮 */
+/* 三个单选按钮 */
+.kpiTrendAnalysis .groupKPI .seachSum .checked {
+    float: left;
+    background-color: #1c4a7f;
+    padding: 0 5px;
+    height: 40px;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .el-checkbox {
+    color: white;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: white;
+}
+/* 搜索按钮 */
+.kpiTrendAnalysis .groupKPI .seach {
+    float: right;
+    margin-top: 5px;
+}
+.kpiTrendAnalysis .el-form--inline .el-form-item {
+    margin-right: 0px;
+}
+.kpiTrendAnalysis .el-button--primary {
+    height: 30px;
+    line-height: 6px;
+}
+/* 设置公司选项 */
+.kpiTrendAnalysis .groupKPI .comey {
+    float: left;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+    background-color: #1c4a7f;
+    height: 40px;
+    width: 150px;
+}
+.kpiTrendAnalysis .el-col-3.span3 {
+   
+    height: 40px;
+}
+.kpiTrendAnalysis .el-col-5.span5 {
+    background-color: #1c4a7f;
+    width: 19.83333%;
+    margin-right: 10px;
+    height: 40px;
+}
+.kpiTrendAnalysis .span35 {
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .el-col-6.span6 {
+    background-color: #1c4a7f;
+    width: 27.2%;
+    height: 40px;
+    margin-right: 10px;
+}
+.kpiTrendAnalysis .groupKPI .seachSum .el-col {
+    border-radius: 0px;
+}
+.kpiTrendAnalysis .regLeft {
+    float: left;
+}
+.kpiTrendAnalysis .el-form-item__content {
+    line-height: 0px;
+}
+
+/* 开始时间 */
+.kpiTrendAnalysis .groupKPI .startTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+/* 结束时间 */
+.kpiTrendAnalysis .groupKPI .endTime {
+    float: right;
+    /* 设置文字间距 */
+    letter-spacing:5px;
+    margin-right: 10px;
+}
+
+.el-input__inner {
+    -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+    transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+.kpiTrendAnalysis  .el-input--suffix .el-input__inner {
+    padding-right: 10px;
+    height: 30px;
+}

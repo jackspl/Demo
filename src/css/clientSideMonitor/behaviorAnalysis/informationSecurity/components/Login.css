@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.abnormalLogin body,
+html,
+#app {
+    width: 100%;
+    height: auto;
+    min-width: 1080px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #040f3c;
+}
+/* 清除浮动的公共类 */
+.abnormalLogin .clearfix:before,
+.abnormalLogin .clearfix:after { 
+    content:"";
+    display:table;
+  
+}
+.abnormalLogin .clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.abnormalLogin .clearfix {
+	*zoom:1;
+}
+.abnormalLogin blockquote, body, button, dd, dl, dt, fieldset,
+form, h1, h2, h3, h4, h5, h6, hr, input, legend,
+li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.abnormalLogin .el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.abnormalLogin input, button {
+    border: 0;
+    outline: none; /*取消轮廓边框*/
+}
+
+.abnormalLogin ul {
+    list-style: none; /*清除ul前面的原点*/
+}
+
+.abnormalLogin a {
+    text-decoration: none; /*取消a标签的下划线*/
+    color: #999;
+    font-size: 12px;
+}
+
+/* 布局容器样式 */
+.abnormalLogin .el-form-item__label {
+    font-size: 14px;
+}
+.abnormalLogin .el-row {
+    margin-bottom: 20px;
+}
+.abnormalLogin .el-col {
+    border-radius: 4px;
+}
+.abnormalLogin .bg-purple-dark {
+    background: #99a9bf;
+}
+.abnormalLogin .bg-purple {
+    background: #1d4b7f;
+}
+.abnormalLogin .bg-purple-light {
+    background: #1d4b7f;
+}
+.abnormalLogin .grid-content {
+    border-radius: 0px;
+    min-height: 26px;
+    
+}
+.abnormalLogin .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+/* -------------------------------------------------------------- */
+
+
+.abnormalLogin .el-form-item__label {
+    color: white;
+    padding: 0 0 0 0;
+     /* 设置文字间距 */
+     letter-spacing:5px;
+     font-size: 16px;
+}
+
+.abnormalLogin .textColor {
+    background-color: #3a81d6;
+    color: white !important;
+    border-radius: 30px;
+}
+.abnormalLogin .el-input__inner {
+    color: white;
+}
+
+/* --------------------------------------------------- */
+/* 表格样式 */
+.abnormalLogin .formList {
+    margin-bottom: 10px;
+}
+
+/* 分页样式 */
+.abnormalLogin .paging .el-input__inner {
+    background-color: blue;
+    width: 120px;
+    border: 1px solid #00639e;
+    background-color: #083760;
+    color: white;
+}
+.abnormalLogin .paging .el-select .el-input__inner {
+    margin-top: 0px;
+}
+
+/* 表格高度40px */
+.abnormalLogin .el-table__header tr,
+  .el-table__header th {
+    padding: 0;
+    height: 40px;
+}
+.abnormalLogin .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    height: 40px;
+}
+/* 表格高亮过渡效果 */
+.abnormalLogin .el-table--enable-row-transition .el-table__body td {
+    -webkit-transition: background-color 0s ease;
+    transition: background-color 0s ease;
+}
+/* -------------------------------------------------------- */
+.abnormalLogin label {
+    max-width: 100%;
+    margin-bottom: 0px !important;
+    font-weight: 400 !important;
+}
+.abnormalLogin .lg_seach {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+/* 搜索条件 */
+.abnormalLogin .lg_seach .cond {
+    width: 550px;
+    height: 40px;
+    padding-left: 10px;
+    float: left;
+    background-color: #1d4b7f;
+}
+/* 搜索条件搜索框 */
+.abnormalLogin .lg_seach .cond .el-input__inner {
+    height: 30px;
+    width: 439px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 图片 */
+.abnormalLogin .lg_seach .img {
+    width: 50px;
+    height: 40px;
+    float: left;
+    padding-top: 4px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-color: #1d4b7f;
+}
+/* 开始时间 */
+.abnormalLogin .lg_seach .startTime {
+    width: 324px;
+    height: 40px;
+    padding-left: 5px;
+    float: left;
+    background-color: #1d4b7f;
+}
+/* 开始时间搜索框 */
+.abnormalLogin .lg_seach .startTime .el-input__inner {
+    height: 30px;
+    width: 208px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 结束时间 */
+.abnormalLogin .lg_seach .endTime {
+    width: 324px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 5px;
+    float: left;
+    background-color: #1d4b7f;
+}
+/* 结束时间搜索框 */
+.abnormalLogin .lg_seach .endTime .el-input__inner {
+    height: 30px;
+    width: 208px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 查询的两个按钮 */
+.abnormalLogin .lg_seach .seachButton {
+    width: 160px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    float: left;
+}
+.abnormalLogin .lg_seach .seachButton .el-button {
+    height: 30px;
+    line-height: 0px;
+}
+/* 滑动按钮 */
+.abnormalLogin .lg_seach .slideButton {
+    float: right;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #3279a9;
+    border-radius: 60px;
+    margin-top: 6px;
+    
+}
+.abnormalLogin .lg_seach .slideButton .allButton {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.abnormalLogin .lg_seach .slideButton .abnormalButton {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.abnormalLogin .el-form-item__label {
+    text-align: left;
+}
+/* 搜索第二行 */
+.abnormalLogin .lg_seachTwo {
+    margin-bottom: 10px;
+}
+/* 用户信息 */
+.abnormalLogin .lg_seachTwo .userInfo {
+    width: 100px;
+    height: 40px;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box !important;
+    background-color: #1d4b7f;
+}
+
+/* 隐藏下拉图标 */
+.abnormalLogin .lg_seachTwo .el-input .el-select__caret {
+    display: none;
+}
+.abnormalLogin .lg_seachTwo .el-input--suffix .el-input__inner {
+    padding-right: 15px;
+}
+/* 公司选择 */
+.abnormalLogin .lg_seachTwo .company {
+    width: 170px;
+    height: 40px;
+    float: left;
+    /* padding-left: 7px; */
+    background-color: #1d4b7f;
+}
+/* 公司选择搜索框 */
+.abnormalLogin .lg_seachTwo .company .el-input__inner {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 部门选择 */
+.abnormalLogin .lg_seachTwo .department {
+    width: 170px;
+    height: 40px;
+    float: left;
+    background-color: #1d4b7f;
+}
+/* 部门选择搜索框 */
+.abnormalLogin .lg_seachTwo .department .el-input__inner {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 用户选择 */
+.abnormalLogin .lg_seachTwo .user {
+    width: 170px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+    background-color: #1d4b7f;
+}
+/* 用户选择搜索框 */
+.abnormalLogin .lg_seachTwo .user .el-input__inner {
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 主机信息 */
+.abnormalLogin .lg_seachTwo .hostInfo {
+    width: 110px;
+    height: 40px;
+    float: left;
+    /* padding-left: 5px; */
+    background-color: #1d4b7f;
+}
+.abnormalLogin .lg_seachTwo .hostInfo .el-form-item__label {
+    padding-left: 5px;
+}
+/* 公司选择 */
+.abnormalLogin .lg_seachTwo .company2 {
+    width: 200px;
+    height: 40px;
+    float: left;
+    /* padding-left: 7px; */
+    background-color: #1d4b7f;
+}
+/* 公司选择搜索框 */
+.abnormalLogin .lg_seachTwo .company2 .el-input__inner {
+    height: 30px;
+    width: 118px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 部门选择 */
+.abnormalLogin .lg_seachTwo .department2 {
+    width: 256px;
+    height: 40px;
+    float: left;
+    background-color: #1d4b7f;
+}
+/* 部门选择搜索框 */
+.abnormalLogin .lg_seachTwo .department2 .el-input__inner {
+    height: 30px;
+    width: 182px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* 主机名 */
+.abnormalLogin .lg_seachTwo .hostName {
+    width: 250px;
+    height: 40px;
+    float: left;
+    /* padding-left: 5px; */
+    background-color: #1d4b7f;
+}
+/* 主机名选择搜索框 */
+.abnormalLogin .lg_seachTwo .hostName .el-input__inner {
+    height: 30px;
+    width: 138px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+/* IP */
+.abnormalLogin .lg_seachTwo .ip {
+    width: 207px;
+    height: 40px;
+    float: left;
+    /* padding-left: 5px; */
+    background-color: #1d4b7f;
+}
+/* IP选择搜索框 */
+.abnormalLogin .lg_seachTwo .ip .el-input__inner {
+    height: 30px;
+    width: 130px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+}
+.abnormalLogin .userInfoAll .infoHostIp .el-input__inner {
+    width: 150px;
+}
+.abnormalLogin .el-table .cell a {
+    color: white;
+}
+.el-input__inner {
+    -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+    transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}

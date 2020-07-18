@@ -1,0 +1,1182 @@
+/* Create by gaojiye */
+@charset "utf-8";
+
+@font-face {
+    font-family: 'led regular';
+    src: url('../../../../fonts/DS-DIGI.TTF');
+}
+
+.dash body,
+html,
+#app {
+    background-color: #040f3c !important;
+}
+
+/*通用样式ͨ*/
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+body {
+    background: #040f3c;
+    color: #ffffff;
+}
+
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* 为了兼容IE6,7 */
+.clearfix {
+    *zoom: 1;
+}
+
+.header {
+    position: relative;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    top: 10px;
+    margin-bottom: 10px;
+    /* background: url(../assets/bg.png) top center no-repeat; */
+}
+
+.dash {
+    /* width: 100%;
+    height: 100%; */
+    /* overflow: hidden; */
+}
+
+/* 头部样式 */
+.header a.a-access {
+    position: absolute;
+    right: 3%;
+    top: -30%;
+}
+
+.updateTime {
+    display: inline;
+    font-family: "led regular";
+    font-size: 26px;
+
+}
+
+.main-left,
+.main-right {
+    float: left;
+    width: 28%;
+    padding: 0 10px;
+}
+
+.main-middle {
+    float: left;
+    width: 44%;
+    padding: 0 10px;
+}
+
+.border-top-left {
+    position: relative;
+    /* margin-top: 15px; */
+    /* padding: 10px; */
+    /* border: 1px solid #54dcf2; */
+    height: 50px;
+}
+
+.border-top-left .fl {
+    float: left;
+}
+
+.border-top-left .fl20 {
+    margin-left: 20px;
+}
+
+/* 左侧内容 */
+.border-top-left .fl .usName {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.border-top-left .fl .usNum {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(46, 198, 122);
+    font-size: 20px;
+}
+
+.border-top-left .usEvent {
+    line-height: 60px;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+
+.border-top-left .eventNum {
+    color: #00ffff;
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.dash .el-tabs__item {
+    color: white;
+    height: 25px;
+    line-height: 25px;
+}
+
+.el-tabs--card>.el-tabs__header {
+    border: 0px;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item {
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+    border: 0px;
+}
+
+.dash .el-tabs__item.is-active {
+    color: white;
+    background: rgb(23, 185, 253);
+    border-radius: 5px;
+}
+
+/* 中间内容 */
+/* 右侧内容 */
+.border-top-right {
+    position: relative;
+    /* margin-top: 15px; */
+    /* padding: 10px; */
+    /* border: 1px solid #54dcf2; */
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.border-top-right .fr {
+    float: right;
+    margin-right: 10px;
+}
+
+.border-top-right .newTime {
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.border-top-right .newEvent {
+    height: 25px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+}
+
+.border-top-right .newEvent .newEventColor {
+    font-size: 22px;
+    color: turquoise;
+    font-weight: 400;
+
+}
+
+.dash .el-table__body td {
+    height: 30px;
+}
+
+/* 右侧最近事件表格样式 */
+.dash .el-table tr {
+    background-color: #040f3c;
+    color: white;
+}
+
+.dash .el-table thead {
+    color: white;
+}
+
+.dash .el-table td,
+.el-table th.is-leaf {
+    border: 0px;
+}
+
+.dash .el-table td,
+.el-table th {
+    padding: 0px;
+}
+
+.dash .el-table tbody tr:hover>td {
+    background-color: #0d7bf8 !important
+}
+
+/* 去掉表格的底边框线 */
+.dash .el-table::before {
+    height: 0px;
+}
+
+.dash .el-table .cell {
+    line-height: 18px;
+    padding-right: 0px;
+}
+
+.dash .state {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+}
+
+.dash .stateGreen {
+    width: 12px;
+    height: 12px;
+    background-color: green;
+}
+
+/* 危险 */
+.dash .dangerous {
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 警告 */
+.dash .warning {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(251, 139, 11);
+    color: white;
+    border-radius: 5px;
+}
+
+/* 正常 */
+.dash .normal {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(0, 255, 119);
+    color: white;
+    border-radius: 5px;
+}
+
+.dash .dangerous p {
+    display: block;
+    line-height: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dash .el-button--mini,
+.el-button--mini.is-round {
+    vertical-align: middle;
+}
+
+.dash .departmentTitle {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #203b5f;
+    margin-bottom: 10px;
+}
+
+.dash .departmentTitle ul li {
+
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+}
+
+.dash .departmentTitle ul li.departmentTitle1 {
+    width: 15%;
+}
+
+.dash .departmentTitle ul li.departmentTitle2 {
+    width: 20%;
+}
+
+.dash .departmentTitle ul li.departmentTitle3 {
+    width: 65%;
+}
+
+.dash .el-progress-bar__inner {
+    background-color: #ff40a5;
+}
+
+.dash .el-progress-bar__outer {
+    background-color: #69f177;
+}
+
+.dash .el-progress__text {
+    color: red;
+}
+
+/* 底部样式 */
+.dash .footer {
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    width: 100%;
+    /* margin-top: 10px; */
+    position: relative;
+    color: white;
+    padding: 0 10px;
+}
+
+.dash .footer-border {
+    width: calc((100% - 60px)/4);
+    float: left;
+    height: 190px;
+}
+
+.dash .footer-border+.footer-border {
+    margin-left: 15px;
+}
+
+.dash .footer-border .footer-top {
+    width: 100%;
+    height: 24px;
+    margin-left: 10px;
+    letter-spacing: 5px;
+}
+
+.dash .footer-container1 {
+    position: relative;
+    margin-top: 15px;
+    border: 2px solid #cadf20;
+}
+
+.dash .expression3 {
+    position: relative;
+    margin-top: 15px;
+    border: 2px solid #2e5cbe;
+    box-shadow: #4431dc 0px 0px 30px 5px inset;
+}
+
+.dash .expression2 {
+    position: relative;
+    margin-top: 15px;
+    border: 2px solid #cadf20;
+    box-shadow: #f7ff81 0px 0px 30px 5px inset;
+}
+
+.dash .expression1 {
+    position: relative;
+    margin-top: 15px;
+    border: 2px solid #df2020;
+    box-shadow: #a93030 0px 0px 30px 5px inset;
+}
+
+.dash .expRed {
+    color: red;
+}
+
+.dash .footer-border .footer-bot {
+    box-sizing: border-box;
+}
+
+.dash .footer-bot-left {
+    width: 20%;
+    height: 120px;
+    float: left;
+    line-height: 130px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.dash .footer-bot-right {
+    width: 70%;
+    height: 100px;
+    float: left;
+}
+
+.dash .footer-bot-right .fl {
+    float: left;
+}
+
+.dash .footer-bot-right .network {
+    letter-spacing: 5px;
+}
+
+.dash .footer-bot-right .fr {
+    float: right;
+}
+
+.dash .footer-right1 .colorRed {
+    color: red;
+}
+
+.dash .progress-bar {
+    background-color: #ca8b10;
+}
+
+.dash .progress {
+    height: 10px;
+    background-color: #0b7062;
+}
+
+.dash .footer-right1 {}
+
+.dash .footer-right2 {}
+
+.dash .footer-right3 {}
+
+.border-top-left .img {
+    line-height: 60px;
+}
+
+.border-container {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #54dcf2;
+    overflow: hidden;
+}
+
+.border-container2 {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #54dcf2;
+    overflow: hidden;
+}
+
+.border-container span.border-span {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+}
+
+.border-container span.top-left {
+    top: -4px;
+    left: -4px;
+    border-top: 3px solid #54dcf2;
+    border-left: 3px solid #54dcf2;
+}
+
+.border-container span.top-right {
+    top: -4px;
+    right: -4px;
+    border-top: 3px solid #54dcf2;
+    border-right: 3px solid #54dcf2;
+}
+
+.border-container span.bottom-left {
+    bottom: -4px;
+    left: -4px;
+    border-bottom: 3px solid #54dcf2;
+    border-left: 3px solid #54dcf2;
+}
+
+.border-container span.bottom-right {
+    bottom: -4px;
+    right: -4px;
+    border-bottom: 3px solid #54dcf2;
+    border-right: 3px solid #54dcf2;
+}
+
+.name-title {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#radar {
+    height: 275px;
+}
+
+#dormitorydetail {
+    height: 135px;
+}
+
+#graduateyear {
+    height: 20px;
+}
+
+.three-pie {
+    border-top: 2px solid #2c7bae;
+    margin: -10px;
+    margin-top: 10px;
+}
+
+.teacher-pie {
+    border-bottom: 2px solid #2c7bae;
+    margin: -10px;
+    margin-bottom: 0;
+}
+
+.three-pie li,
+.teacher-pie li {
+    float: left;
+    width: 100%;
+    border-right: 2px solid #2c7bae;
+}
+
+.teacher-pie li .name-title {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.three-pie li:last-child,
+.teacher-pie li:last-child {
+    border-right: none;
+}
+
+/* 登录用户、账户并发数量高度 */
+#sexrate,
+#nationarate,
+#householdrate {
+    height: 245px;
+    overflow: hidden;
+}
+
+/* 最近事件高度 */
+#recentEvents {
+    height: 200px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* 部门事件数量高度 */
+#departEvents {
+    height: 240px;
+    overflow: hidden;
+}
+
+#mapadd {
+    height: 304px;
+}
+
+.number-show {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.number-show span.span-name {
+    font-size: 14px;
+    color: #fffd51;
+}
+
+.number-show span.span-number-show {
+    font-size: 18px;
+    color: #54b5b5;
+    font-style: italic;
+}
+
+.number-show li {
+    line-height: 25px;
+}
+
+#teacherrate,
+#courserate,
+#professionrate {
+    height: 200px;
+}
+
+/* 地图里面的 */
+/* .dash #card3 {
+    height: 615px;
+    position: relative;
+} */
+
+
+
+
+
+.dash .card3-bot {
+    position: absolute;
+    top: 0px;
+    width: 580px;
+    height: 600px;
+    color: red;
+    /* background-color: rgb(23, 185, 253); */
+}
+
+.dash .card3-bot .bot-info {
+    width: 580px;
+    height: 120px;
+    /* background-color: red; */
+    margin: 10px 10px;
+}
+
+.dash .bot-info ul li {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #2e5cbe;
+    box-shadow: #4431dc 0px 0px 8px 0px inset;
+    border-radius: 5px;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.dash .bot-info ul li .dayName {
+    /* width: 112px;
+    height: 30px; */
+    line-height: 30px;
+    /* margin-left: 25px; */
+    margin-top: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.dash .bot-info ul li .dayNum {
+    /* margin-left: 25px;
+    margin-top: 10px; */
+}
+
+.dash .dayNum .dayNum-1 {
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    color: #1ed5f5;
+    font-size: 26px;
+    float: left;
+    margin-top: 10px;
+    display: inline;
+    margin-left: 10px;
+    font-family: "led regular";
+    font-size: 35px;
+}
+
+.dash .dayNum .dayNum-2 {
+    display: block;
+    width: 90px;
+    height: 20px;
+    line-height: 30px;
+    color: #0ba67b;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.dash .dayNum .dayNnmColor {
+    color: rgb(235, 115, 3);
+    display: block;
+    width: 90px;
+    height: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.dash .dayNum .dayNum-2-2 {
+    display: block;
+    width: 90px;
+    height: 20px;
+    line-height: 30px;
+    color: #0ba67b;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+
+/* 地图深圳公司信息 */
+.dash .card3-bot .bot-figure {
+    width: 360px;
+    height: 200px;
+    border: 1px solid #00eaf0;
+    box-shadow: #00eaf0 0px 0px 8px 0px inset;
+    /* margin-top: 228px; */
+    margin-top: 230px;
+}
+
+.dash .figure-title {
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #00eaf0;
+    border-bottom: 1px solid #00eaf0;
+    box-shadow: #00eaf0 0px 0px 2px 0px inset;
+
+}
+
+.dash .pdlefr-10 {
+    padding-left: 10px;
+}
+
+.dash .point {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.dash .points {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(23, 185, 253);
+    margin: 10px auto;
+}
+
+.dash .point-title {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    float: left;
+    font-size: 16px;
+}
+
+.dash .card3-bot .bot-figure .el-tabs__header {
+    margin-bottom: 0px;
+}
+
+
+.dash .info-right {
+    float: right;
+    padding-top: 5px;
+}
+
+#agelist {
+    height: 130px;
+}
+
+#changedetail {
+    height: 229px;
+}
+
+.table-kingdargen {
+    margin-top: 6px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.table-kingdargen>thead>tr>th {
+    border-bottom: 1px solid #0f4075;
+    padding: 2px 8px;
+    text-align: center;
+    color: #419aff;
+    font-size: 12px;
+    font-weight: normal;
+    border-top: 1px solid #0f4075 !important;
+}
+
+.table-kingdargen tbody tr td {
+    padding: 1px 8px;
+    font-size: 12px;
+    border: none;
+    color: #fff;
+}
+
+.table-kingdargen tbody tr:nth-child(2n) {
+    background: #1d2a42;
+}
+
+.table-kingdargen tbody tr:hover {
+    background: #1d2a42;
+}
+
+.table-kingdargen tbody tr td:nth-child(2) {
+    color: #e9aa00;
+}
+
+.table-kingdargen tbody tr td:nth-child(3) {
+    color: #53bf18;
+}
+
+.table-kingdargen tbody tr td:nth-child(4) {
+    color: #f9504a;
+}
+
+.table-kingdargen tbody tr td:nth-child(5) {
+    color: #12f0e9;
+}
+
+#juniorservice {
+    height: 190px;
+}
+
+#edubalance {
+    height: 203px;
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
+* {
+    box-sizing: border-box;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #16a085;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    position: relative;
+    padding: 0.2em 1em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    /* margin: 1em 0.8em; */
+}
+
+.button.type1 {
+    color: #00ffff;
+    margin-top: 10px;
+}
+
+.button.type1.type1::after,
+.button.type1.type1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.button.type1.type1::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #566473;
+    border-right-color: #566473;
+}
+
+.button.type1.type1::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #566473;
+    border-left-color: #566473;
+}
+
+.button.type1.type1:hover:after,
+.button.type1.type1:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+/* 部门事件数量样式 */
+.dash .departNum {
+    position: relative;
+}
+
+.dash .paging {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.dash .el-table:before {
+    border: 0px;
+}
+
+.dash .kpiDetailsQuery .footerSum .pag .el-pagination button,
+.el-pagination span:not([class*=suffix]),
+.el-pagination button,
+.el-pagination span:not([class*=suffix]),
+.el-pager li {
+    height: 22px;
+    line-height: 22px;
+}
+
+/* 部门事件表格样式 */
+.dash #departEvents .el-table {
+    background-color: #040f3c;
+}
+
+.dash .top_three .w30 {
+    width: 33.333%;
+}
+
+.dash .top_three .w30 .usEvent {
+    line-height: 60px;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+
+.dash .top_three .w30 .eventNum1 {
+    color: red;
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.dash .top_three .w30 .eventNum2 {
+    color: #00ffff;
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.dash .top_three .w30 .workUp {
+    color: #00ffff;
+    display: block;
+    font-size: 12px;
+    margin: 30px 0px 0 0px;
+}
+
+.dash .top_three .w30 .workNum {
+    color: #00ffff;
+    display: block;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.dash .top_three .w30 .eventNum3 {
+    color: #68b63b;
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.dash .top_three .w30 .KPIUp {
+    color: #68b63b;
+    display: block;
+    font-size: 12px;
+    margin: 30px 0px 0 0px;
+}
+
+.dash .top_three .w30 .KPINum {
+    color: #68b63b;
+    display: block;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.dash .boxx {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.dash .el-carousel__item:nth-child(2n) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dash .el-carousel__item:nth-child(2n+1) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------- */
+/* 主体部分 */
+.border-main {
+    position: relative;
+    /* position: absolute; */
+    margin-top: 15px;
+    /* padding: 0px; */
+    border: 1px solid #54dcf2;
+    /* overflow: hidden; */
+    height: 620px;
+    /* box-sizing: border-box; */
+}
+
+.border-main .chineMap-top {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+/* 轮播盒子 */
+.border-main .shufflingBox {
+    width: 360px;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0px;
+    border-radius: 5px;
+    border: 1px solid #00eaf0;
+    border-top: 0;
+    -webkit-box-shadow: #00eaf0 0 0 8px 0 inset;
+    box-shadow: inset 0 0 8px 0 #00eaf0;
+}
+
+/* 公司下面的圆形图和折线图 */
+.border-main .shufflingBox .comBox {
+    width: 100%;
+    height: 240px;
+}
+
+.border-main .shufflingBox .comBox .com-left {
+    width: 30%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.border-main .shufflingBox .comBox .com-left .info-left {
+    color: white;
+    width: 100%;
+    margin-top: 41%;
+    margin-bottom: 25%;
+    margin-left: 25px;
+}
+
+.border-main .shufflingBox .comBox .com-left .round {
+    /* position: absolute;
+    top: 30px; */
+    margin-top: 30px;
+}
+
+.border-main .shufflingBox .comBox .com-right {
+    width: 70%;
+    box-sizing: border-box;
+    float: right;
+}
+
+.border-main .shufflingBox .comBox .com-right .el-tabs__header {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+/* --------------------------------------------- */
+/* echarts新的样式 */
+.dash #card1 {
+    height: 230px;
+}
+
+.dash #card2 {
+    height: 230px;
+}
+
+.dash #card3 {
+    height: 230px;
+}
+
+.dash #card7 {
+    height: 615px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dash #card8 {
+    border: 1px solid yellow;
+    height: 85px;
+    position: relative;
+}
+
+.dash #card9 {
+    height: 160px;
+}
+
+.dash #card9 .el-tabs--card>.el-tabs__header .el-tabs__nav {}
+
+/* --------------------------------- */
+/* 今日事件数量样式 */
+.dash .shufflingBox .info-day {
+    width: 360px;
+    height: 60px;
+    border-radius: 5px;
+    border-top: 0px;
+    position: absolute;
+    bottom: -3px;
+}
+
+.dash .shufflingBox .info-up {
+    margin: -1px 10px;
+    padding-top: 5px;
+}
+
+.dash .shufflingBox .info-fl {
+    float: left;
+}
+
+.dash .shufflingBox .up-point {
+    width: 10px;
+    height: 10px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: rgb(23, 185, 253);
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.dash .shufflingBox .up-day {
+    color: white;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.dash .shufflingBox .up-day-num {
+    color: #15bf7f;
+    font-size: 16px;
+    /* margin-right: 8px; */
+    width: 50px;
+}
+
+.dash .shufflingBox .up-abnormal {
+    color: white;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.dash .shufflingBox .up-abnormal-num {
+    color: rgb(235, 115, 3);
+    font-size: 16px;
+    margin-right: 8px;
+    width: 50px;
+}
+
+.dash .el-table--scrollable-x .el-table__body-wrapper {
+    /* overflow-x: scroll; */
+}
+
+/* 暂无数据样式 */
+.dash .el-table__empty-block {
+    background-color: #040f3c;
+    width: 100% !important;
+}
+
+.dash .el-table__empty-text {
+    height: 120px;
+    line-height: 120px;
+}

@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+html,
+#app {
+    width: 100%;
+    height: auto;
+    min-width: 1080px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #040f3c;
+}
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after { 
+	content:"";
+  display:table;
+  
+}
+.clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.clearfix {
+	*zoom:1;
+}
+blockquote, body, button, dd, dl, dt, fieldset,
+form, h1, h2, h3, h4, h5, h6, hr, input, legend,
+li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+input, button {
+    border: 0;
+    outline: none; /*取消轮廓边框*/
+}
+
+ul {
+    list-style: none; /*清除ul前面的原点*/
+}
+
+a {
+    text-decoration: none; /*取消a标签的下划线*/
+    color: #999;
+    font-size: 12px;
+}
+.abnormalDownload label {
+    max-width: 100%;
+    margin-bottom: 0px !important;
+    font-weight: 400 !important;
+}
+/* ------------------------------------------------------ */
+.abnormalDownload .el-form-item__label {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: white;
+    letter-spacing: 5px;
+}
+.abnormalDownload .seachF1 {
+    float: left;
+}
+.abnormalDownload .seachF1 .searchCriteria {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-bottom: 10px;
+    width: 560px;
+}
+.abnormalDownload .seachF1 .searchCriteria .el-input__inner {
+    width: 442px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalDownload .seachF1 .searchImg{
+    width: 50px;
+    height: 42px;
+   
+    float: left;
+    background-color: #1d4b7f;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+  }
+  /* --------------------- */
+  .abnormalDownload .userInfoAll {
+    width: 100%;
+    padding: 10px 0px;
+    height: 40px;
+}
+.abnormalDownload .el-input__inner {
+    color: white;
+}
+.abnormalDownload .userInfoAll .el-select .el-input .el-select__caret {
+    display: none;
+}
+.abnormalDownload .userInfoAll .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #0d4274
+  }
+.abnormalDownload .userInfoAll .userInfo {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalDownload .userInfoAll .infoHost .el-form--inline .el-form-item,
+.abnormalDownload .userInfoAll .infoHostCompany .el-form--inline .el-form-item,
+.abnormalDownload .userInfoAll .infoHostDep .el-form--inline .el-form-item,
+.abnormalDownload .userInfoAll .infoHostName .el-form--inline .el-form-item
+ {
+    margin-right: 0;
+}
+
+
+.abnormalDownload .userInfoAll .userInfoCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 10px;
+    /* padding-right: 20px; */
+}
+.abnormalDownload .userInfoAll .userInfoCompany .el-input__inner {
+    width: 110px;
+}
+.abnormalDownload .userInfoAll .userInfoDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    /* padding-right: 20px; */
+}
+.abnormalDownload .userInfoAll .userInfoDep .el-input__inner {
+    width: 90px;
+}
+.abnormalDownload .userInfoAll .userChange {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.abnormalDownload .userInfoAll .userChange .el-input__inner {
+    width: 90px;
+}
+
+.abnormalDownload .seachF2 {
+    
+    float: left;
+}
+.abnormalDownload .seachF2 .el-input__inner {
+    color: white;
+}
+.abnormalDownload .seachF2 .seachStarTime {
+    height: 42px;
+    width: 316;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-bottom: 10px;
+    padding-right: 17px;
+  }
+  .abnormalDownload .seachF2 .seachStarTime .el-input__suffix {
+      padding-right: 26px;
+  }
+  .abnormalDownload .seachF2 .seachStarTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalDownload .seachF2 .seachStarTime .el-date-editor.el-input {
+      width: 220px;
+  }
+  .abnormalDownload .seachF2 .seachEndTime {
+    height: 42px;
+    width: 316;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .abnormalDownload .seachF2 .seachEndTime .el-input__suffix {
+    padding-right: 22px;
+}
+  .abnormalDownload .seachF2 .seachEndTime .el-date-editor.el-input {
+      width: 216px !important;
+  }
+  .abnormalDownload .seachF2 .seachEndTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalDownload .seachF2 .seachEndTime .el-date-editor.el-input {
+    width: 220px;
+}
+.abnormalDownload .seachF2 .infoMation {
+}
+.abnormalDownload .userInfoAll {
+    width: 100%;
+    padding: 10px 0px;
+    height: 40px;
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHost {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostCompany .el-input__inner {
+    width: 120px;
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostDep .el-input__inner {
+    width: 120px;
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostName {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 14px;
+    
+}
+.abnormalDownload .seachF2 .userInfoAll .infoHostName .el-input__inner {
+    width: 120px;
+}
+.abnormalDownload .seachF3 {
+    width: 270px;
+    height: 94px;
+    padding: 5px 0px 0 10px;
+    float: left;
+    background-color: #1d4b7f;
+    box-sizing: border-box;
+}
+/* 滑动按钮 */
+.abnormalDownload .changeButton {
+    float: right;
+    margin-right: 34px;
+    width: 205px;
+    height: 30px;
+    border: 1px solid #3279a9;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    
+}
+.abnormalDownload .changeButton .allButton {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.abnormalDownload .changeButton .abnormalButton {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.textColor {
+    background-color: #3a81d6;
+    color: white !important;
+    border-radius: 30px;
+}
+
+/* ----------------------------- */
+.seachF3 .switchSum {
+    width: 100%;
+    padding: 10px 10px;
+}
+.seachF3 .switchSum .acrossDepDown {
+    width: 74px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-right: 50px;
+}
+.seachF3 .switchSum .acrossDepDown .el-switch__label {
+    color: white;
+    position: absolute;
+    display: block;
+    width: 120px;
+    left: 50px;
+}
+.seachF3 .switchSum .acrossDepDown .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .switchSum .acrossDepDown .el-switch__core {
+    height: 10px;
+}
+.seachF3 .switchSum .acrossDepDown .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.seachF3 .switchSum .sizeOverweight {
+    width: 74px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+.seachF3 .switchSum .sizeOverweight .el-switch__label {
+    color: white;
+    position: absolute;
+    display: block;
+    width: 60px;
+    left: 50px;
+}
+.seachF3 .switchSum .sizeOverweight .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .switchSum .sizeOverweight .el-switch__core {
+    height: 10px;
+}
+.seachF3 .switchSum .sizeOverweight .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.seachF3 .switchSum .confDocumentsDown {
+    width: 74px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    margin-right: 50px;
+}
+.seachF3 .switchSum .confDocumentsDown .el-switch__label {
+    color: white;
+    position: absolute;
+    display: block;
+    width: 120px;
+    left: 50px;
+}
+.seachF3 .switchSum .confDocumentsDown .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .switchSum .confDocumentsDown .el-switch__core {
+    height: 10px;
+}
+.seachF3 .switchSum .confDocumentsDown .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+.seachF3 .switchSum .numOverweight {
+    width: 74px;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+.seachF3 .switchSum .numOverweight .el-switch__label {
+    color: white;
+    position: absolute;
+    display: block;
+    width: 60px;
+    left: 50px;
+}
+.seachF3 .switchSum .numOverweight .el-switch.is-checked .el-switch__core::after {
+    margin-left: -9px;
+    margin-top: -2px;
+}
+.seachF3 .switchSum .numOverweight .el-switch__core {
+    height: 10px;
+}
+.seachF3 .switchSum .numOverweight .el-switch__core:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    margin-top: -1px;
+    background-color: #FFF;
+    margin-top: -2px;
+    margin-left: 0px;
+}
+/* ----------------------------------------------- */
+.abnormalDownload .seachF4 {
+    float: right;
+    height: 90px;
+    /* margin-right: 20px; */
+}
+.abnormalDownload .seachF4 {
+    text-align: right;
+}
+.abnormalDownload .seachF4 .seachBtn {
+    margin-top: 54px;
+}
+.abnormalDownload .seachAllSum {
+    height: 90px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    height: 90px;
+}
+/* ---------------------------------------------------------- */
+/* 分页样式 */
+.abnormalDownload .paging {
+    /* width: 34.2%; */
+    margin-top: 10px;
+}
+
+.abnormalDownload .paging .el-input__inner {
+    background-color: blue;
+    width: 120px;
+    border: 1px solid #00639e;
+    background-color: #083760;
+    color: white;
+}
+.abnormalDownload .paging .el-select .el-input__inner {
+    margin-top: 0px;
+}
+.abnormalDownload .paging .el-pagination{
+    text-align: right;
+}
+.abnormalLogin .el-pagination{
+    padding: 0px;
+}
+.el-input__inner {
+    -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+    transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+
+/* .abnormalDownload .userInfoAll .infoHost .el-form-item__label, */
+.abnormalDownload .userInfoAll .infoHostCompany .el-form-item__label,
+.abnormalDownload .userInfoAll .infoHostDep .el-form-item__label,
+.abnormalDownload .userInfoAll .infoHostName .el-form-item__label
+ {
+    padding-left: 2px;
+}
+.abnormalDownload .el-table::before {
+    border: 0px;
+    background-color: #00639e;
+}
+.abnormalDownload  .el-pager, .el-pager li, .el-pagination .btn-next, .el-pagination .btn-prev {
+    background-color: #02356f;
+}

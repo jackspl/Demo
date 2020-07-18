@@ -1,0 +1,411 @@
+.scenUser .main {
+  padding-bottom: 30px;
+  text-align: center;
+} 
+.scenUser .el-table .warning-row {
+  background: rgba(229, 236, 175, 0.38);
+} 
+.scenUser .el-button.is-round {
+  padding: 3px 7px;
+}
+.scenUser .excel {
+  float: right;
+  right: 20px;
+  padding: 3px 7px;
+}
+.scenUser .el-row {
+  position: initial;
+}
+.scenUser .form {
+  padding-top: 10px;
+  white-space: nowrap;
+}
+.scenUser .el-pagination {
+  float: right;
+  padding-top: 10px;
+}
+
+.scenUser .el-form--inline .el-form-item {
+  display: flex;
+}
+.scenUser .el-form--inline .el-form-item__content {
+  flex: 1;
+}
+.scenUser .el-autocomplete {
+  flex: 1;
+}
+.scenUser .el-form--inline .el-form-item__label {
+  white-space: nowrap;
+}
+.scenUser .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+/* 搜索部分 */
+.scenUser .queryBox {
+  width: 100%;
+  height: 80px;
+  background-color: #02356f;
+  border: none;
+}
+.scenUser .el-form-item {
+  float: left;
+  letter-spacing:2px;
+}
+
+.scenUser .el-form-item__label {
+  color: white;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  line-height: 40px;
+}
+.scenUser .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e;
+}
+.scenUser .el-input__prefix {
+  color: #00cbd5;
+}
+.scenUser input::-webkit-input-placeholder {
+  color: white;
+}
+.scenUser input::-moz-input-placeholder {
+  color: white;
+}
+.scenUser input::-ms-input-placeholder {
+  color: white;
+}
+.scenUser .el-button--primary {
+  letter-spacing:2px;
+  box-sizing: border-box;
+  background-color: #3284c3;
+}
+.scenUser .el-button+.el-button {
+  letter-spacing:2px;
+  box-sizing: border-box;
+  background-color: #bfbfbf;
+  color: black;
+  font-weight: 400;
+  
+}
+.scenUser .el-tabs--border-card>.el-tabs__header {
+  border-bottom: 0px;
+}
+/* echarts部分 */
+.scenUser .linePie {
+  float: left;
+  width: 100%;
+  height: 430px;
+  border: 1px solid #2f69a0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* Excel表格部分 */
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+    background-color: #2f69a0;
+    border-radius: 5px;
+}
+
+.el-table--border,
+.el-table--group {
+    border-color: #2f69a0;
+    border-radius: 5px;
+}
+
+.el-table td,
+.el-table th.is-leaf {
+border-bottom: 1px solid #8094ad;
+}
+
+.el-table--border th,
+.el-table--border th.gutter:last-of-type {
+        border-bottom: 1px solid #344e77;
+}
+
+.el-table--border td{
+  border-right: 1px solid #344e77;
+}
+.el-table--border th {
+border-right: 1px solid #344e77;
+}
+.right .el-tabs--border-card>.el-tabs__content {
+  background-color: #02356f;
+  overflow: none;
+}
+.el-pagination__total {
+  color: white;
+}
+.el-pagination button:disabled {
+  background-color: #02356f;
+  color: white;
+}
+.el-pager, .el-pager li {
+  background-color: #02356f;
+  color: white;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev {
+  background-color: #02356f;
+  color: white;
+}
+
+.el-table tbody tr:hover>td {
+  background-color: #385c95 !important;
+  color: #13eaf2 !important;
+}
+/* 分页背景色 */
+.el-input.is-disabled .el-input__inner {
+  background-color: #02356f;
+
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  background-color: #02356f;
+
+}
+.scenUser .queryBox {
+  width: 100%;
+  height: 80px;
+  background-color: #02356f;
+  border: none;
+}
+.scenUser .el-input.is-disabled .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e;
+  margin-left: 5px;
+}
+/* 表格高度40px */
+.scenUser .el-table__header tr,
+  .el-table__header th {
+    padding: 0;
+    height: 40px;
+}
+.scenUser .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    height: 40px;
+}
+/* 表格高亮过渡效果 */
+.scenUser .el-table--enable-row-transition .el-table__body td {
+    -webkit-transition: background-color 0s ease;
+    transition: background-color 0s ease;
+}
+
+/* -------------------------------------- */
+/* 改版后的 */
+.scenUser .seachAll {
+  width: 100%;
+  /* height: 70px; */
+  /* padding: 10px 0; */
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchCriteria{
+  float: left;
+  width: 270px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.scenUser .seachAll .searchImg{
+  float: left;
+  width: 38px;
+  height: 50px;
+  padding-top: 5px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchUserName{
+  float: left;
+  width: 238px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchUserName .el-input--suffix .el-input__inner {
+  width: 154px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.scenUser .seachAll .searchUserName span.el-input__suffix {
+  margin-right: 10px;
+}
+.scenUser .seachAll .searchScenarioName{
+  float: left;
+  width: 324px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchScenarioName .el-input--suffix .el-input__inner {
+  width: 234px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.scenUser .seachAll .searchStarTime{
+  float: left;
+  width: 274px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchEndTime{
+  float: left;
+  width: 274px;
+  height: 50px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchButton{
+  float: right;
+  width: 160px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.scenUser .seachAll .searchButton .el-button+.el-button {
+  width: 74px;
+  margin-left: 10px;
+}
+.scenUser #basedUser {
+  height: 430px;
+}
+.scenUser .el-col-4 {
+  width: 15.66667%;
+  border: 1px solid #00639e;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #164276;
+}
+.scenUser .el-input {
+  width: auto;
+}
+.scenUser .tableHeader  .el-input__inner {
+  background-color: rgb(54, 90, 136);
+  color: white;
+  border: 0px solid rgb(54, 90, 136);
+}
+/* --------------------------------- */
+/* 总信息 */
+.scenUser .infoSum {
+  width: 100%;
+  float: left;
+   height: 50px;
+  padding-top: 14px;
+  background-color: #164276;
+  border: 1px solid #00639e;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.scenUser .infoSum .infoTimeSum {
+  margin-right: 20px;
+}
+.scenUser .infoSum .infoNumSum {
+  margin-right: 20px;
+}
+.scenUser .infoSum .infoAvgTimeSum {
+  margin-right: 20px;
+}
+.scenUser .infoSum .infoUserSum {
+  margin-right: 20px;
+}
+
+.el-input__inner {
+  -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+  transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+/* ------------------------------------------- */
+.scenUser .el-form-item__label {
+  padding-right: 5px;
+}
+/* 搜索框公共样式 */
+.scenUser .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+}
+.scenUser .el-button {
+  border: 0px;
+  padding: 8px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.scenUser .el-date-editor.el-input, .el-date-editor.el-input__inner {
+  width: 202px;
+}
+.scenUser .el-form-item__content {
+  float: left;
+}
+/* ---------------------------------------------- */
+/* 搜索栏总框 */
+.scenUser .seachSum {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+/* 搜索条件 */
+.scenUser .seachSum .seachCond {
+  /* width: 100px; */
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+/* 图片 */
+.scenUser .seachSum .seachImg {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+.scenUser .seachSum .seachImg .img {
+  margin-top: 3px;
+}
+/* 用户名 */
+.scenUser .seachSum .userName {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+/* 场景名称 */
+.scenUser .seachSum .sceneName {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+/* 开始时间 */
+.scenUser .seachSum .startTime {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: right;
+}
+/* 结束时间 */
+.scenUser .seachSum .endTime {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: right;
+}
+/* 搜索按钮 */
+.scenUser .seachSum .seachButton {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 6px;
+  float: right;
+}
+.scenUser .el-pagination span:not([class*=suffix]) {
+  height: 30px;
+  line-height: 30px;
+}

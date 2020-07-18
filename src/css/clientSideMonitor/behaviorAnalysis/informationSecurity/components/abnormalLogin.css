@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+html,
+#app {
+    width: 100%;
+    height: auto;
+    min-width: 1080px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #040f3c;
+}
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after { 
+    content:"";
+    display:table;
+  
+}
+.clearfix:after {
+	clear:both;
+}
+/* 为了兼容IE6,7 */
+.clearfix {
+	*zoom:1;
+}
+blockquote, body, button, dd, dl, dt, fieldset,
+form, h1, h2, h3, h4, h5, h6, hr, input, legend,
+li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.el-tabs--border-card {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+input, button {
+    border: 0;
+    outline: none; /*取消轮廓边框*/
+}
+
+ul {
+    list-style: none; /*清除ul前面的原点*/
+}
+
+a {
+    text-decoration: none; /*取消a标签的下划线*/
+    color: #999;
+    font-size: 12px;
+}
+/* 布局容器样式 */
+.abnormalLogin .el-form-item__label {
+    font-size: 14px;
+}
+.abnormalLogin .el-row {
+    margin-bottom: 20px;
+}
+.abnormalLogin .el-col {
+    border-radius: 4px;
+}
+.abnormalLogin .bg-purple-dark {
+    background: #99a9bf;
+}
+.abnormalLogin .bg-purple {
+    background: #1d4b7f;
+}
+.abnormalLogin .bg-purple-light {
+    background: #1d4b7f;
+}
+.abnormalLogin .grid-content {
+    border-radius: 0px;
+    min-height: 26px;
+}
+.abnormalLogin .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+.abnormalLogin label {
+    max-width: 100%;
+    margin-bottom: 0px !important;
+    font-weight: 400 !important;
+}
+/* -------------------------------------------------------------- */
+
+/* 搜索条件样式 */
+.abnormalLogin .seachSpan9 {
+    width: 29.5%;
+    margin-right: 20px;
+}
+.abnormalLogin .seachCond .el-input__inner {
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+    height: 30px;
+    width: 340px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.abnormalLogin .el-form-item__label {
+    color: white;
+    padding: 0 0 0 5px;
+     /* 设置文字间距 */
+     letter-spacing:5px;
+     font-size: 16px;
+}
+/* 开始时间 */
+.abnormalLogin .timeSpan9 {
+    width: 37%;
+    margin-right: 20px;
+}
+.abnormalLogin .timeCond .el-input__inner {
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    color: white;
+}
+.el-form--inline .timeCond .el-form-item {
+    margin-right: 0px;
+}
+.abnormalLogin .startTime {
+    float: left;
+}
+.abnormalLogin .entTime {
+    float: left;
+}
+.abnormalLogin .startTime .el-input__suffix {
+    padding-right: 26px;
+}
+.abnormalLogin .entTime .el-input__suffix {
+    padding-right: 26px; 
+}
+.abnormalLogin  .el-switch__label * {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 4px;
+}
+/* 查询按钮 */
+.abnormalLogin .seachSpan6 .bg-purple {
+    background-color: #02356f;
+}
+.abnormalLogin .seachAll {
+    float: left;
+}
+/* 滑动按钮 */
+
+.abnormalLogin .changeButton {
+    float: right;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #3279a9;
+    border-radius: 60px;
+    margin-top: 6px;
+    
+}
+.abnormalLogin .changeButton .allButton {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.abnormalLogin .changeButton .abnormalButton {
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    color: #3279a9;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.textColor {
+    background-color: #3a81d6;
+    color: white !important;
+    border-radius: 30px;
+}
+.abnormalLogin .el-input__inner {
+    color: white;
+}
+/* 用户信息样式 */
+.abnormalLogin .userInfo .seachCond .el-input__inner {
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.abnormalLogin .userInfo .seachSpan9 {
+    width: 29.5%;
+    margin-right: 20px;
+}
+.abnormalLogin .infoCond .el-input__inner {
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+    height: 30px;
+    width: 155px;
+    line-height: 30px;
+    color: white;
+    margin-right: 10px;
+}
+.abnormalLogin .userInfo .infoSpan9 {
+    width: 59%;
+    margin-right: 20px;
+}
+.abnormalLogin .userInfo .infoSpan9 .el-select .el-input .el-select__caret {
+    margin-right: 10px;
+}
+.abnormalLogin .userInfo .deparWidth .el-input__inner {
+    width: 
+    150px;
+}
+/* --------------------------------------------------- */
+/* 表格样式 */
+.abnormalLogin .formList {
+    /* width: 34.2%; */
+    margin-bottom: 10px;
+}
+
+/* 分页样式 */
+.abnormalLogin .paging {
+    /* width: 34.2%; */
+}
+
+.abnormalLogin .paging .el-input__inner {
+    background-color: blue;
+    width: 120px;
+    border: 1px solid #00639e;
+    background-color: #083760;
+    color: white;
+}
+.abnormalLogin .paging .el-select .el-input__inner {
+    margin-top: 0px;
+}
+.abnormalLogin .paging .el-pagination{
+    text-align: right;
+}
+.abnormalLogin .el-pagination{
+    padding: 0px;
+}
+/* 表格高度40px */
+.abnormalLogin .el-table__header tr,
+  .el-table__header th {
+    padding: 0;
+    height: 40px;
+}
+.abnormalLogin .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    height: 40px;
+}
+/* 表格高亮过渡效果 */
+.abnormalLogin .el-table--enable-row-transition .el-table__body td {
+    -webkit-transition: background-color 0s ease;
+    transition: background-color 0s ease;
+}
+.abnormalLogin .el-form--inline .el-form-item {
+    margin-right: 0px;
+}
+/* -------------------------------------------------------- */
+/* 搜索条件信息样式 */
+.informationSecurity .el-form-item {
+    line-height: 20px;
+}
+.abnormalLogin .seachInfoAll {
+    /* width: 100%; */
+    height: 42px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.abnormalLogin .seachInfoAll .searchCriteria {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 5px;
+    width: 560px;
+    box-sizing: border-box;
+  }
+  .abnormalLogin .seachInfoAll .searchCriteria .el-input__inner {
+    width: 442px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalLogin .seachInfoAll .searchImg{
+    width: 47px;
+    height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+  }
+  .abnormalLogin .seachInfoAll .seachStarTime {
+    height: 42px;
+    width: 320px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-left: 20px;
+  }
+  .abnormalLogin .seachInfoAll .seachStarTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalLogin .seachInfoAll .seachStarTime .el-date-editor.el-input {
+      width: 220px;
+  }
+  .abnormalLogin .seachInfoAll .seachEndTime {
+    height: 42px;
+    width: 320px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    margin-right: 20px;
+  }
+  .abnormalLogin .seachInfoAll .seachEndTime .el-input__inner {
+    height: 30px;
+    width: 205px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #1d4b7f;
+  }
+  .abnormalLogin .seachInfoAll .seachEndTime .el-date-editor.el-input {
+    width: 220px;
+}
+  .abnormalLogin .seachInfoAll .seachButton {
+    height: 42px;
+    width: 356px;
+    line-height: 42px;
+    float: right;
+  }
+  /* 用户信息搜索样式 */
+  .abnormalLogin .userInfoAll {
+    width: 100%;
+    padding: 10px 0px;
+    height: 58px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.abnormalLogin .userInfoAll .el-select .el-input .el-select__caret {
+    display: none;
+}
+.abnormalLogin .userInfoAll .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #3279a9;
+    background-color: #0d4274
+  }
+.abnormalLogin .userInfoAll .userInfo {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 5px;
+}
+
+.abnormalLogin .userInfoAll .userInfoCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.abnormalLogin .userInfoAll .userInfoCompany .el-input__inner {
+    width: 110px;
+}
+.abnormalLogin .userInfoAll .userInfoDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 20px;
+}
+.abnormalLogin .userInfoAll .userInfoDep .el-input__inner {
+    width: 90px;
+}
+.abnormalLogin .userInfoAll .userChange {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.abnormalLogin .userInfoAll .userChange .el-input__inner {
+    width: 90px;
+}
+.abnormalLogin .userInfoAll .el-form-item__label {
+    margin-right: 3px;
+}
+.abnormalLogin .userInfoAll .infoHost {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalLogin .userInfoAll .infoHostCompany {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+}
+.abnormalLogin .userInfoAll .infoHostCompany .el-input__inner {
+    width: 150px;
+}
+.abnormalLogin .userInfoAll .infoHostDep {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 41px;
+}
+.abnormalLogin .userInfoAll .infoHostDep .el-input__inner {
+    width: 148px;
+}
+.abnormalLogin .userInfoAll .infoHostName {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 46px;
+}
+.abnormalLogin .userInfoAll .infoHostName .el-input__inner {
+    width: 150px;
+}
+.abnormalLogin .userInfoAll .infoHostIp {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    background-color: #1d4b7f;
+    padding-left: 36px;
+    padding-right: 10px;
+}
+.abnormalLogin .userInfoAll .infoHostIp .el-input__inner {
+    width: 150px;
+}
+.abnormalLogin .el-table .cell a {
+    color: white;
+}
+.el-input__inner {
+    -webkit-transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+    transition: border-color 0s cubic-bezier(.645,.045,.355,1);
+}
+.abnormalLogin .el-table::before {
+    border: 0px;
+    background-color: #00639e;
+}
+.el-table--border, .el-table--group {
+    border-color: #2f69a0;
+    border-radius: 5px;
+}

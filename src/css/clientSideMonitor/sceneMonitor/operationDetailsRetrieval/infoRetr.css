@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: auto;
+  min-width: 1080px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #040f3c;
+}
+
+/* 清除浮动的公共类 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* 为了兼容IE6,7 */
+.clearfix {
+  *zoom: 1;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  border: 0;
+  outline: none;
+  /*取消轮廓边框*/
+}
+
+ul {
+  list-style: none;
+  /*清除ul前面的原点*/
+}
+
+a {
+  text-decoration: none;
+  /*取消a标签的下划线*/
+  color: #999;
+  font-size: 12px;
+}
+
+
+
+
+
+/* 表格样式 */
+.infoRetr .el-table .warning-row {
+  background: rgba(229, 236, 175, 0.38);
+}
+
+.infoRetr .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+
+.el-autocomplete-suggestion .el-popper .is-loading {
+  position: absolute;
+  top: 120px;
+  left: 551px;
+  transform-origin: center top;
+  z-index: 2002;
+  width: 187px;
+  background-color: red;
+}
+
+.infoRetr .mainTable {
+  background-color: #02356f;
+}
+
+.infoRetr .el-pagination {
+  float: right;
+  padding-top: 0px;
+}
+
+.infoRetr .el-pagination .btn-prev {
+  background-color: #02356f;
+}
+
+.infoRetr .el-pagination .btn-next {
+  background-color: #02356f;
+}
+
+.infoRetr .formClass {
+  height: 100px;
+}
+
+.infoRetr .el-form--inline .el-form-item {
+  display: flex;
+}
+
+.infoRetr .el-form--inline .el-form-item__content {
+  flex: 1;
+}
+
+.infoRetr .el-form--inline .el-form-item__label {
+  white-space: nowrap;
+}
+
+.infoRetr .el-col-8 {
+  padding-left: 5%;
+}
+
+.infoRetr .excel {
+  float: right;
+  right: 20px;
+  padding: 3px 7px;
+}
+
+.infoRetr .el-row {
+  position: initial;
+}
+
+/* 搜索部分 */
+.infoRetr .queryBox {
+  width: 100%;
+  height: 80px;
+  background-color: #02356f;
+  border: none;
+}
+
+.infoRetr .el-form-item {
+  float: left;
+  letter-spacing: 2px;
+}
+
+.infoRetr .el-form-item__label {
+  color: white;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  line-height: 40px;
+}
+
+.infoRetr .el-input__inner {
+  background-color: #083760;
+  color: white;
+  border: 1px solid #00639e;
+}
+
+.infoRetr .el-input__prefix {
+  color: #00cbd5;
+}
+
+.infoRetr input::-webkit-input-placeholder {
+  color: white;
+}
+
+.infoRetr input::-moz-input-placeholder {
+  color: white;
+}
+
+.infoRetr input::-ms-input-placeholder {
+  color: white;
+}
+
+.infoRetr .el-button--primary {
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  background-color: #3284c3;
+}
+
+.infoRetr .el-button+.el-button {
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  background-color: #bfbfbf;
+  color: black;
+  font-weight: 400;
+
+}
+
+.infoRetr .el-tabs--border-card>.el-tabs__header {
+  border-bottom: 0px;
+}
+
+/* Excel表格部分 */
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+  background-color: #2f69a0;
+  border-radius: 5px;
+}
+
+.el-table--border,
+.el-table--group {
+  border-color: #2f69a0;
+  border-radius: 5px;
+}
+
+.infoRetr .el-table th.is-leaf {
+  /* border-bottom: 0px; */
+}
+
+.el-table--border th,
+.el-table--border th.gutter:last-of-type {
+  border-bottom: 1px solid #344e77;
+}
+
+.el-table--border td {
+  border-right: 1px solid #344e77;
+}
+
+.el-table--border th {
+  border-right: 1px solid #344e77;
+}
+
+/* 分页背景色 */
+.infoRetr .el-col-24 {
+  background-color: #02356f !important;
+
+}
+
+.infoRetr {
+  padding: 10px;
+}
+
+/* 表格高度40px */
+.infoRetr .el-table__header tr,
+.el-table__header th {
+  padding: 0;
+  height: 40px;
+}
+
+.infoRetr .el-table__body tr,
+.el-table__body td {
+  padding: 0;
+  height: 40px;
+}
+
+/* 表格高亮过渡效果 */
+.infoRetr .el-table--enable-row-transition .el-table__body td {
+  -webkit-transition: background-color 0s ease;
+  transition: background-color 0s ease;
+}
+
+/* ----------------------------- */
+/* 搜索框公共样式 */
+.infoRetr .el-form--inline .el-form-item {
+  margin-right: 0px;
+}
+
+.infoRetr .el-form-item__label {
+  padding-right: 5px;
+}
+
+.infoRetr .el-input__inner {
+  height: 30px;
+  line-height: 30px;
+}
+
+/* 搜索按钮 */
+.infoRetr .el-button--primary {
+  height: 30px;
+}
+
+.infoRetr .el-button {
+  border: 0px;
+  padding: 8px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.infoRetr .seachSum .seachButton {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 6px;
+  float: right;
+}
+
+/* ------------------------------ */
+.infoRetr .seachAll {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* 用户名 */
+.infoRetr .seachAll .searchUserName {
+  float: left;
+  margin-right: 10px;
+}
+
+.infoRetr .seachAll .searchUserName .el-input--suffix .el-input__inner {
+  width: 100px;
+}
+
+/* 用户ID */
+.infoRetr .seachAll .searchUserID {
+  float: left;
+  margin-right: 10px;
+}
+
+.infoRetr .seachAll .searchUserID .el-input--suffix .el-input__inner {
+  width: 100px;
+}
+
+/* 主机名 */
+.infoRetr .seachAll .hostName {
+  float: left;
+  margin-right: 10px;
+}
+
+.infoRetr .seachAll .hostName .el-input--suffix .el-input__inner {
+  width: 145px;
+}
+
+/* 场景名称 */
+.infoRetr .seachAll .searchScenarioName {
+  float: left;
+  margin-right: 10px;
+}
+
+.infoRetr .seachAll .searchScenarioName .el-input--suffix .el-input__inner {
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 开始时间 */
+.infoRetr .seachAll .searchStarTime {
+  float: left;
+  margin-right: 10px;
+}
+
+/* 结束时间 */
+.infoRetr .seachAll .searchEndTime {
+  float: left;
+  margin-right: 10px;
+}
+
+/* 搜索按钮 */
+.infoRetr .seachAll .searchButton {
+  float: right;
+  text-align: right;
+}
+
+.infoRetr .seachAll .searchButton .el-button+.el-button {
+  margin-right: 0px;
+}
+
+/* 底部---------- */
+.infoRetr .footerSum {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  /* line-height: 40px; */
+}
+
+/* 搜索条件 */
+.infoRetr .footerSum .seachCond {
+  /* width: 100px; */
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* 图片 */
+.infoRetr .footerSum .seachImg {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+
+.infoRetr .footerSum .seachImg .img {
+  margin-top: 3px;
+}
+
+/* 分页 */
+.infoRetr .footerSum .pag {
+  float: right;
+}
+
+.infoRetr .content {
+  margin-top: -10px;
+}
+
+.el-input__inner {
+  -webkit-transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+  transition: border-color 0s cubic-bezier(.645, .045, .355, 1);
+}
+
+.infoRetr .seachAll .searchStarTime .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 190px;
+}
+
+.infoRetr .seachAll .searchEndTime .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 190px;
+}
+
+.infoRetr .el-table .cell,
+.el-table th div {
+  padding: 0px;
+}

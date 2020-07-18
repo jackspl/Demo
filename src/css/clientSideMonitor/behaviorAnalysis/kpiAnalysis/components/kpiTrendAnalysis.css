@@ -1,0 +1,570 @@
+/* 公共样式 */
+/* 文字颜色 */
+.kpiTrendAnalysis .el-form-item__label {
+    color: white;
+    padding: 0px;
+}
+
+/* 开始时间、结束时间搜素框宽度 */
+.kpiTrendAnalysis .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+    width: 135px;
+}
+
+/* 所有radio文字颜色 */
+.kpiTrendAnalysis .el-radio {
+    color: white;
+}
+
+/* 所有搜索框的高度 */
+.kpiTrendAnalysis .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #00639e;
+    background-color: #083760;
+    color: white;
+}
+
+/* 搜索框内边框 */
+.kpiTrendAnalysis .el-input--suffix .el-input__inner {
+    padding-right: 0px;
+}
+
+.kpiTrendAnalysis .el-form--inline .el-form-item {
+    margin-right: 0px;
+}
+
+/* 搜索按钮 */
+.kpiTrendAnalysis .el-button--primary {
+    height: 30px;
+}
+
+.kpiTrendAnalysis .el-button {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+/* 重新来过 */
+/* 集团所有样式开始--------------------------------------- */
+.kpiTrendAnalysis .groupSum {
+    height: 460px;
+    margin-bottom: 30px;
+}
+
+/* 集团kpi搜索样式 */
+.kpiTrendAnalysis .groupKPI {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+/* 开始时间 */
+.kpiTrendAnalysis .groupKPI .startTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .groupKPI .startTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 结束时间 */
+.kpiTrendAnalysis .groupKPI .endTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .groupKPI .endTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 查询按钮 */
+.kpiTrendAnalysis .groupKPI .seachButton {
+    float: right;
+    height: 40px;
+}
+
+/* 折线图部分 */
+.kpiTrendAnalysis .groupSum .line {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .groupSum #ttt {
+    width: 100%;
+    height: 390px;
+}
+
+/* 集团所有样式结束--------------------------------------- */
+
+
+/* 公司所有样式开始--------------------------------------- */
+.kpiTrendAnalysis .compSum {
+    height: 460px;
+    margin-bottom: 30px;
+}
+
+/* 部门kpi搜索样式 */
+.kpiTrendAnalysis .compKPI {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+/* 三个单选按钮 */
+.kpiTrendAnalysis .compKPI .threeRadio {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .compKPI .threeRadio .el-radio {
+    margin-right: 15px;
+}
+
+.kpiTrendAnalysis .compKPI .threeRadio .personal {
+    margin-right: 10px;
+}
+
+/* 公司选择 */
+.kpiTrendAnalysis .compKPI .comChange {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    background-color: #1c4a7f;
+}
+
+.kpiTrendAnalysis .compKPI .comChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 三个checkbox选择按钮 */
+.kpiTrendAnalysis .compKPI .threeCheck {
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .compKPI .threeCheck .el-checkbox {
+    color: white;
+}
+
+.kpiTrendAnalysis .compKPI .threeCheck .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: white;
+}
+
+.kpiTrendAnalysis .compKPI .threeCheck .check1 {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .compKPI .threeCheck .check31 {
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* 两个单选按钮 */
+.kpiTrendAnalysis .compKPI .twoRadio {
+    float: left;
+    height: 40px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .compKPI .twoRadio .el-radio {
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .compKPI .twoRadio .radioTwo {
+    margin-right: 10px;
+}
+
+/* 开始时间 */
+.kpiTrendAnalysis .compKPI .startTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .compKPI .startTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 结束时间 */
+.kpiTrendAnalysis .compKPI .endTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .compKPI .endTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 查询按钮 */
+.kpiTrendAnalysis .compKPI .seachButton {
+    float: right;
+    height: 40px;
+}
+
+/* 折线图部分 */
+.kpiTrendAnalysis .compSum .line {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .compSum #ttt {
+    width: 100%;
+    height: 370px;
+}
+
+/* 公司所有样式结束--------------------------------------- */
+
+
+/* 部门所有样式开始--------------------------------------- */
+.kpiTrendAnalysis .depSum {
+    height: 460px;
+    margin-bottom: 30px;
+}
+
+/* 部门kpi搜索样式 */
+.kpiTrendAnalysis .depKPI {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+/* 三个单选按钮 */
+.kpiTrendAnalysis .depKPI .threeRadio {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .depKPI .threeRadio .el-radio {
+    margin-right: 15px;
+}
+
+.kpiTrendAnalysis .depKPI .threeRadio .personal {
+    margin-right: 10px;
+}
+
+/* 公司选择 */
+.kpiTrendAnalysis .depKPI .comChange {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: #1c4a7f;
+}
+
+.kpiTrendAnalysis .depKPI .comChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 部门选择 */
+.kpiTrendAnalysis .depKPI .depChange {
+    float: left;
+    height: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .depKPI .depChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 三个checkbox选择按钮 */
+.kpiTrendAnalysis .depKPI .threeCheck {
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .depKPI .threeCheck .el-checkbox {
+    color: white;
+}
+
+.kpiTrendAnalysis .depKPI .threeCheck .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: white;
+}
+
+.kpiTrendAnalysis .depKPI .threeCheck .check1 {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .depKPI .threeCheck .check31 {
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* 两个单选按钮 */
+.kpiTrendAnalysis .depKPI .twoRadio {
+    float: left;
+    height: 40px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .depKPI .twoRadio .el-radio {
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .depKPI .twoRadio .radioTwo {
+    margin-right: 10px;
+}
+
+/* 开始时间 */
+.kpiTrendAnalysis .depKPI .startTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .depKPI .startTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 结束时间 */
+.kpiTrendAnalysis .depKPI .endTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .depKPI .endTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 查询按钮 */
+.kpiTrendAnalysis .depKPI .seachButton {
+    float: right;
+    height: 40px;
+}
+
+/* 折线图部分 */
+.kpiTrendAnalysis .depSum .line {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .depSum #ttt {
+    width: 100%;
+    height: 370px;
+}
+
+/* 部门所有样式结束--------------------------------------- */
+
+
+
+/* 部门所有样式开始--------------------------------------- */
+.kpiTrendAnalysis .userSum {
+    height: 460px;
+    margin-bottom: 30px;
+}
+
+/* 部门kpi趋势样式 */
+.kpiTrendAnalysis .userKPI {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+/* 三个单选按钮 */
+.kpiTrendAnalysis .userKPI .threeRadio {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .userKPI .threeRadio .el-radio {
+    margin-right: 15px;
+}
+
+.kpiTrendAnalysis .userKPI .threeRadio .personal {
+    margin-right: 10px;
+}
+
+/* 公司选择 */
+.kpiTrendAnalysis .userKPI .comChange {
+    float: left;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: #1c4a7f;
+}
+
+.kpiTrendAnalysis .userKPI .comChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 部门选择 */
+.kpiTrendAnalysis .userKPI .depChange {
+    float: left;
+    height: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1c4a7f;
+}
+
+.kpiTrendAnalysis .userKPI .depChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 用户选择 */
+.kpiTrendAnalysis .userKPI .userChange {
+    float: left;
+    height: 40px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .userKPI .userChange .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 三个checkbox选择按钮 */
+.kpiTrendAnalysis .userKPI .threeCheck {
+    float: left;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: #1c4a7f;
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .userKPI .threeCheck .el-checkbox {
+    color: white;
+    margin-right: 20px;
+}
+
+.kpiTrendAnalysis .userKPI .threeCheck .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: white;
+}
+
+.kpiTrendAnalysis .userKPI .threeCheck .check1 {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .userKPI .threeCheck .check31 {
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* 两个单选按钮 */
+.kpiTrendAnalysis .userKPI .twoRadio {
+    float: left;
+    height: 40px;
+    background-color: #1c4a7f;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .userKPI .twoRadio .el-radio {
+    margin-right: 10px;
+}
+
+.kpiTrendAnalysis .userKPI .twoRadio .radioTwo {
+    margin-right: 10px;
+}
+
+/* 开始时间 */
+.kpiTrendAnalysis .userKPI .startTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .userKPI .startTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 结束时间 */
+.kpiTrendAnalysis .userKPI .endTime {
+    float: right;
+    height: 40px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+
+.kpiTrendAnalysis .userKPI .endTime .el-form-item__label {
+    margin-right: 5px;
+}
+
+/* 查询按钮 */
+.kpiTrendAnalysis .userKPI .seachButton {
+    float: right;
+    height: 40px;
+}
+
+/* 折线图部分 */
+.kpiTrendAnalysis .userSum .line {
+    width: 100%;
+    height: 470px;
+    border: 1px solid #2f69a0;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.kpiTrendAnalysis .userSum #ttt {
+    width: 100%;
+    height: 370px;
+}
